@@ -108,7 +108,7 @@ export const Header = () => {
 
           <HStack gap={4}>
             <NextLink
-              href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Financial+Hub+Assessoria+&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Finhub+Assessoria+&type=phone_number&app_absent=0"
               passHref
               target="_blank"
               legacyBehavior
@@ -168,7 +168,7 @@ export const Header = () => {
                     fontWeight="bold"
                     color="green.500"
                   >
-                    Financial Hub
+                    Finhub
                   </Heading>
                 </Flex>
               </NextLink>
@@ -194,7 +194,7 @@ export const Header = () => {
                   </NextLink>
                 ))}
                 <NextLink
-                  href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Financial+Hub+Assessoria+&type=phone_number&app_absent=0"
+                  href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Finhub+Assessoria+&type=phone_number&app_absent=0"
                   passHref
                   target="_blank"
                   legacyBehavior

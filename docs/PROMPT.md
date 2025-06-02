@@ -1,6 +1,6 @@
-### ✅ Site da Financial Hub Assessoria**
+### ✅ Site da Finhub Assessoria**
 
-> Estou criando um site institucional para a **Financial Hub Assessoria**, uma empresa de São Paulo especializada em conectar empresas a soluções financeiras estratégicas.
+> Estou criando um site institucional para a **Finhub Assessoria**, uma empresa de São Paulo especializada em conectar empresas a soluções financeiras estratégicas.
 >
 > O objetivo do site é **gerar autoridade, comunicar nossos serviços com clareza e converter visitantes em clientes**, principalmente via agendamento de conversa com nossos especialistas.
 >

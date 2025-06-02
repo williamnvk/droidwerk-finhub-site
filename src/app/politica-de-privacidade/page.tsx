@@ -16,10 +16,10 @@ export default function PoliticaDePrivacidade() {
   return (
     <Box>
       <Head>
-        <title>Política de Privacidade - Financial Hub Assessoria</title>
+        <title>Política de Privacidade - Finhub Assessoria</title>
         <meta
           name="description"
-          content="Política de Privacidade da Financial Hub Assessoria - Assessoria financeira especializada em conectar empresas às melhores soluções do mercado."
+          content="Política de Privacidade da Finhub Assessoria - Assessoria financeira especializada em conectar empresas às melhores soluções do mercado."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -38,7 +38,7 @@ export default function PoliticaDePrivacidade() {
           </Heading>
 
           <Text>
-            A Financial Hub Assessoria valoriza e respeita a privacidade dos seus clientes e usuários. 
+            A Finhub Assessoria valoriza e respeita a privacidade dos seus clientes e usuários. 
             Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos 
             suas informações pessoais quando você utiliza nossos serviços de assessoria financeira ou 
             interage com nosso website.
@@ -54,14 +54,14 @@ export default function PoliticaDePrivacidade() {
                 1. Quem Somos
               </Heading>
               <Text>
-                A Financial Hub Assessoria é uma empresa especializada em assessoria financeira empresarial, 
+                A Finhub Assessoria é uma empresa especializada em assessoria financeira empresarial, 
                 que atua como intermediadora estratégica conectando empresas às melhores soluções do mercado 
                 financeiro. Nossa sede está localizada em São Paulo - SP, e prestamos serviços em todo 
                 território nacional.
               </Text>
               <Text mt={3}>
                 <strong>Dados de contato do controlador:</strong><br />
-                Financial Hub Assessoria<br />
+                Finhub Assessoria<br />
                 E-mail: contato@financialhub.com.br<br />
                 Telefone: (11) 94298-9475<br />
                 Endereço: São Paulo - SP

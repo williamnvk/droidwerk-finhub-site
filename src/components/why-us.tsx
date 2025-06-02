@@ -79,7 +79,7 @@ export const WhyUsSection = () => {
             >
               <Flex align="center" gap={2}>
                 <ShieldQuestionIcon size={16} />
-                <Text color="white">Por que a Financial Hub?</Text>
+                <Text color="white">Por que a Finhub?</Text>
               </Flex>
             </Badge>
 

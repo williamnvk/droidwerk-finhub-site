@@ -165,7 +165,7 @@ export const HeroSection = () => {
             justify={{ base: "center", lg: "flex-start" }}
           >
             <NextLink
-              href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+solicitar+uma+avalia%C3%A7%C3%A3o+gratuita+da+Financial+Hub+Assessoria+&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+solicitar+uma+avalia%C3%A7%C3%A3o+gratuita+da+Finhub+Assessoria+&type=phone_number&app_absent=0"
               passHref
               target="_blank"
               legacyBehavior

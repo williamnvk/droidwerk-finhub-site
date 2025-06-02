@@ -18,7 +18,7 @@ export const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "A Financial Hub conectou nossa empresa a um fundo com excelentes condições de crédito. Hoje estamos em plena expansão com energia limpa e financiamento estruturado.",
+        "A Finhub conectou nossa empresa a um fundo com excelentes condições de crédito. Hoje estamos em plena expansão com energia limpa e financiamento estruturado.",
       name: "Carlos M.",
       role: "Diretor de Operações",
       company: "Grupo Energia Renovável",
@@ -40,7 +40,7 @@ export const TestimonialsSection = () => {
     },
     {
       quote:
-        "Conseguimos expandir para a Argentina com total segurança jurídica e fiscal. O apoio da Financial Hub foi essencial para nossa internacionalização.",
+        "Conseguimos expandir para a Argentina com total segurança jurídica e fiscal. O apoio da Finhub foi essencial para nossa internacionalização.",
       name: "Roberto Santos",
       role: "Diretor Comercial",
       company: "Export & Import Ltda",
@@ -107,7 +107,7 @@ export const TestimonialsSection = () => {
             color="gray.600"
             _dark={{ color: "gray.300" }}
           >
-            Empresas que contaram com a Financial Hub encontraram soluções que
+            Empresas que contaram com a Finhub encontraram soluções que
             mudaram seu patamar. Veja o que nossos clientes dizem:
           </Text>
         </VStack>

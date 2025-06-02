@@ -23,10 +23,10 @@ export const Footer = () => (
         {/* Company Info */}
         <VStack align="start" gap={4}>
           <Heading fontSize="xl" fontWeight="bold" color="white">
-            Financial Hub Assessoria
+            Finhub Assessoria
           </Heading>
           <Text fontSize="sm" color="gray.300" lineHeight="1.6">
-            A Financial Hub Assessoria conecta empresas a soluções financeiras
+            A Finhub Assessoria conecta empresas a soluções financeiras
             completas, com foco em performance, expansão e sustentabilidade.
           </Text>
           <Text fontSize="sm" color="gray.400" fontWeight="medium">
@@ -172,7 +172,7 @@ export const Footer = () => (
           fontSize="sm"
           textAlign={{ base: "center", lg: "left" }}
         >
-          © 2025 Financial Hub Assessoria. Todos os direitos reservados
+          © 2025 Finhub Assessoria. Todos os direitos reservados
         </Text>
 
         <HStack gap={6} justify="center">

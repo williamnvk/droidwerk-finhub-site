@@ -16,10 +16,10 @@ export default function TermosDeUso() {
   return (
     <Box>
       <Head>
-        <title>Termos de Uso - Financial Hub Assessoria</title>
+        <title>Termos de Uso - Finhub Assessoria</title>
         <meta
           name="description"
-          content="Termos de Uso da Financial Hub Assessoria - Conectamos empresas às melhores soluções financeiras do mercado com estratégia e agilidade."
+          content="Termos de Uso da Finhub Assessoria - Conectamos empresas às melhores soluções financeiras do mercado com estratégia e agilidade."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -38,7 +38,7 @@ export default function TermosDeUso() {
           </Heading>
 
           <Text fontSize="lg">
-            Bem-vindo aos Termos de Uso da Financial Hub Assessoria. Este
+            Bem-vindo aos Termos de Uso da Finhub Assessoria. Este
             documento estabelece as regras e condições para utilização de nossa
             plataforma e serviços de assessoria financeira empresarial. Ao
             acessar ou utilizar nossos serviços, você concorda com estes termos
@@ -56,7 +56,7 @@ export default function TermosDeUso() {
             Aceitação dos Termos
           </Heading>
           <Text>
-            Ao utilizar os serviços da Financial Hub Assessoria, você confirma
+            Ao utilizar os serviços da Finhub Assessoria, você confirma
             que leu, entendeu e concorda com estes Termos de Uso. Se você não
             concordar com qualquer parte destes termos, solicitamos que não
             utilize nossos serviços.
@@ -71,7 +71,7 @@ export default function TermosDeUso() {
             Descrição do Serviço
           </Heading>
           <Text>
-            A Financial Hub Assessoria é uma empresa especializada em conectar
+            A Finhub Assessoria é uma empresa especializada em conectar
             empresas às melhores soluções financeiras do mercado. Atuamos como
             intermediários estratégicos, oferecendo assessoria especializada em
             diversas áreas financeiras para acelerar o crescimento empresarial.
@@ -100,7 +100,7 @@ export default function TermosDeUso() {
             Nossa Atuação
           </Heading>
           <Text>
-            A Financial Hub atua exclusivamente como intermediadora estratégica
+            A Finhub atua exclusivamente como intermediadora estratégica
             entre clientes (pessoas físicas ou jurídicas) e instituições
             devidamente habilitadas pelo Banco Central do Brasil (BACEN),
             Comissão de Valores Mobiliários (CVM), SUSEP e demais órgãos
@@ -179,7 +179,7 @@ export default function TermosDeUso() {
             Responsabilidades e Limitações
           </Heading>
           <Text>
-            A Financial Hub Assessoria atua como consultora e intermediadora,
+            A Finhub Assessoria atua como consultora e intermediadora,
             conectando empresas a instituições financeiras autorizadas. Não
             oferecemos garantias de aprovação, concessão de crédito ou retorno
             financeiro específico.
@@ -191,7 +191,7 @@ export default function TermosDeUso() {
             executoras.
           </Text>
           <Text>
-            Em nenhuma circunstância a Financial Hub Assessoria será responsável
+            Em nenhuma circunstância a Finhub Assessoria será responsável
             por decisões tomadas pelas instituições financeiras parceiras ou por
             resultados específicos de operações financeiras.
           </Text>

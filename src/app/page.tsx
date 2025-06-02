@@ -11,7 +11,7 @@ import { WhyUsSection } from "../components/why-us";
 import { AboutSection } from "../components/about";
 
 export const metadata: Metadata = {
-  title: "Financial Hub Assessoria – Soluções Financeiras Inteligentes para Empresas",
+  title: "Finhub Assessoria – Soluções Financeiras Inteligentes para Empresas",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -21,17 +21,17 @@ export const metadata: Metadata = {
   keywords:
     "assessoria financeira, captação de recursos, crédito empresarial, valuation, M&A, expansão internacional, energia sustentável, mini-banco, seguros empresariais, tecnologia financeira, IA",
   openGraph: {
-    title: "Financial Hub Assessoria – Soluções Financeiras Inteligentes",
+    title: "Finhub Assessoria – Soluções Financeiras Inteligentes",
     description:
       "Conectamos sua empresa aos melhores recursos do mercado: crédito, tecnologia, expansão internacional e muito mais.",
     url: "https://financialhub.com.br",
-    siteName: "Financial Hub Assessoria",
+    siteName: "Finhub Assessoria",
     images: [
       {
         url: "https://financialhub.com.br/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Financial Hub Assessoria - Soluções Financeiras Inteligentes",
+        alt: "Finhub Assessoria - Soluções Financeiras Inteligentes",
       },
     ],
     locale: "pt_BR",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Financial Hub Assessoria – Soluções Financeiras Inteligentes",
+    title: "Finhub Assessoria – Soluções Financeiras Inteligentes",
     description:
       "Conectamos sua empresa aos melhores recursos do mercado: crédito, tecnologia, expansão internacional e muito mais.",
     images: ["https://financialhub.com.br/images/twitter-image.png"],
@@ -53,7 +53,7 @@ const StructuredData = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: "Financial Hub Assessoria",
+    name: "Finhub Assessoria",
     description:
       "Assessoria financeira especializada em conectar empresas às melhores soluções do mercado — de crédito à tecnologia, de valuation à expansão internacional.",
     url: "https://financialhub.com.br",

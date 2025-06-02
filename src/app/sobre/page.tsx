@@ -37,23 +37,23 @@ import {
 import NextLink from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sobre a Financial Hub Assessoria | Especialistas em Soluções Financeiras",
+  title: "Sobre a Finhub Assessoria | Especialistas em Soluções Financeiras",
   description:
-    "Conheça a Financial Hub Assessoria, especializada em conectar empresas às melhores soluções do mercado. Missão, visão, valores e nossa expertise em soluções financeiras.",
+    "Conheça a Finhub Assessoria, especializada em conectar empresas às melhores soluções do mercado. Missão, visão, valores e nossa expertise em soluções financeiras.",
   keywords:
-    "Financial Hub Assessoria, assessoria financeira, soluções empresariais, captação de recursos, sobre empresa, missão visão valores",
+    "Finhub Assessoria, assessoria financeira, soluções empresariais, captação de recursos, sobre empresa, missão visão valores",
   openGraph: {
-    title: "Sobre a Financial Hub Assessoria | Especialistas em Soluções Financeiras",
+    title: "Sobre a Finhub Assessoria | Especialistas em Soluções Financeiras",
     description:
-      "Conheça a Financial Hub Assessoria, especializada em conectar empresas às melhores soluções do mercado. Missão, visão, valores e nossa expertise.",
+      "Conheça a Finhub Assessoria, especializada em conectar empresas às melhores soluções do mercado. Missão, visão, valores e nossa expertise.",
     url: "https://financialhub.com.br/sobre",
-    siteName: "Financial Hub Assessoria",
+    siteName: "Finhub Assessoria",
     images: [
       {
         url: "https://financialhub.com.br/images/about-og.png",
         width: 1200,
         height: 630,
-        alt: "Financial Hub Assessoria - Sobre nossa empresa",
+        alt: "Finhub Assessoria - Sobre nossa empresa",
       },
     ],
     locale: "pt_BR",
@@ -68,7 +68,7 @@ const StructuredData = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: "Financial Hub Assessoria",
+    name: "Finhub Assessoria",
     url: "https://financialhub.com.br",
     description:
       "Assessoria financeira especializada em conectar empresas às melhores soluções do mercado — de crédito à tecnologia, de valuation à expansão internacional.",
@@ -213,7 +213,7 @@ export default function SobrePage() {
               >
                 <Flex align="center" gap={2}>
                   <Building size={16} />
-                  <Text color="white">Sobre a Financial Hub</Text>
+                  <Text color="white">Sobre a Finhub</Text>
                 </Flex>
               </Badge>
 
@@ -400,7 +400,7 @@ export default function SobrePage() {
                   </HStack>
 
                   <Text fontSize="lg" color="gray.700" lineHeight="1.6" maxW="4xl">
-                    A Financial Hub atua exclusivamente como intermediadora estratégica
+                    A Finhub atua exclusivamente como intermediadora estratégica
                     entre clientes e instituições devidamente habilitadas pelo
                     Banco Central do Brasil (BACEN), Comissão de Valores
                     Mobiliários (CVM), SUSEP e demais órgãos reguladores
@@ -494,7 +494,7 @@ export default function SobrePage() {
 
                 <VStack gap={4}>
                   <NextLink
-                    href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Financial+Hub+Assessoria&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Finub+Assessoria&type=phone_number&app_absent=0"
                     passHref
                     target="_blank"
                     legacyBehavior

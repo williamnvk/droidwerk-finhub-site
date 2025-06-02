@@ -70,7 +70,7 @@ Digitalize a gestão financeira da sua empresa e tome decisões com base em dado
 
 ---
 
-### **3. Por que a Financial Hub?**
+### **3. Por que a Finhub?**
 
 **Título:**
 **Muito além da assessoria. Somos especialistas em conexões estratégicas.**
@@ -94,11 +94,11 @@ Nosso time alia experiência prática com inteligência de mercado para entregar
 **Quem confia, cresce com a gente.**
 
 **Texto de apoio:**
-Empresas que contaram com a Financial Hub encontraram soluções que mudaram seu patamar. Veja o que nossos clientes dizem:
+Empresas que contaram com a Finhub encontraram soluções que mudaram seu patamar. Veja o que nossos clientes dizem:
 
 *Exemplo de depoimento:*
 
-> “A Financial Hub conectou nossa empresa a um fundo com excelentes condições de crédito. Hoje estamos em plena expansão com energia limpa e financiamento estruturado.”
+> “A Finhub conectou nossa empresa a um fundo com excelentes condições de crédito. Hoje estamos em plena expansão com energia limpa e financiamento estruturado.”
 > — *Carlos M., Diretor de Operações*
 
 ---
@@ -156,7 +156,7 @@ Para mais informações sobre regulamentação financeira, consulte os sites ofi
 ### **8. Footer (Rodapé)**
 
 **Sobre a empresa:**
-A Financial Hub Assessoria conecta empresas a soluções financeiras completas, com foco em performance, expansão e sustentabilidade.
+A Finhub Assessoria conecta empresas a soluções financeiras completas, com foco em performance, expansão e sustentabilidade.
 
 **Contato:**
 📍 São Paulo - SP
