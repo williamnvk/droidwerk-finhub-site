@@ -1,0 +1,37 @@
+{
+  "name": "Finhub Assessoria",
+  "short_name": "Finhub Assessoria",
+  "description": "Descubra sua personalidade com a Finhub Assessoria. Oferecemos análises personalizadas para melhorar seu autoconhecimento e desenvolvimento pessoal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1428BF",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "orientation": "portrait",
+  "categories": ["productivity", "lifestyle", "personalization"]
+}
