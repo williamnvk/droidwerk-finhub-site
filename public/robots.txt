@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
 
-Sitemap: https://finhubassessoria.com.br/sitemap.xml
+# Allow Google bots
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing bots
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay
+Crawl-delay: 1
+
+Sitemap: https://financialhub.com.br/sitemap.xml
