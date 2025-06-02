@@ -68,9 +68,6 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   
-  // Otimizações de bundle
-  swcMinify: true,
-  
   // Trailing slash
   trailingSlash: false,
 };
