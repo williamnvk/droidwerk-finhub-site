@@ -27,9 +27,6 @@ importers:
       '@fontsource/poppins':
         specifier: ^5.1.1
         version: 5.1.1
-      '@fontsource/rubik':
-        specifier: ^5.2.5
-        version: 5.2.5
       '@hookform/resolvers':
         specifier: ^3.9.0
         version: 3.10.0(react-hook-form@7.54.2(react@19.0.0))
@@ -413,9 +410,6 @@ packages:
 
   '@fontsource/poppins@5.1.1':
     resolution: {integrity: sha512-PQVKHGQOK+UpVNPzTFF9Z9ez3CIDkunfvRXGH95hiDoqWJc1shW4JFqe4tEoqnq7RtZaYrw9aWQq58L4eny5xg==}
-
-  '@fontsource/rubik@5.2.5':
-    resolution: {integrity: sha512-vr7hwIRJfK+OGi8+pEcNdLCzMoOAxfHPOmfDfZ63mDzG1/OUSeTLWiAtYywKCwPluTcV84hY2CHBUBF+OpKEcw==}
 
   '@hookform/resolvers@3.10.0':
     resolution: {integrity: sha512-79Dv+3mDF7i+2ajj7SkypSKHhl1cbln1OGavqrsF7p6mbUv11xpqpacPsGDCTRvCSjEEIez2ef1NveSVL3b0Ag==}
@@ -3768,8 +3762,6 @@ snapshots:
   '@floating-ui/utils@0.2.9': {}
 
   '@fontsource/poppins@5.1.1': {}
-
-  '@fontsource/rubik@5.2.5': {}
 
   '@hookform/resolvers@3.10.0(react-hook-form@7.54.2(react@19.0.0))':
     dependencies:
