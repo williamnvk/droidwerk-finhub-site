@@ -10,12 +10,13 @@ import { SolutionsSection } from "../components/solutions";
 import { WhyUsSection } from "../components/why-us";
 import { AboutSection } from "../components/about";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Finhub Assessoria – Soluções Financeiras Inteligentes para Empresas | São Paulo",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
   description:
     "🏆 Conectamos sua empresa aos melhores recursos do mercado: crédito empresarial, valuation, M&A, expansão internacional e energia sustentável. +50 parceiros financeiros em São Paulo.",
   keywords:
