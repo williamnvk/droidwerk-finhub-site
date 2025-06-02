@@ -106,7 +106,7 @@ export const HeroSection = () => {
           </Badge>
 
           <Heading
-            fontSize={{ base: "4xl", md: "5xl", lg: "6xl" }}
+            fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
             fontWeight="extrabold"
             lineHeight="1.1"
             letterSpacing="tight"
@@ -123,9 +123,10 @@ export const HeroSection = () => {
           </Heading>
 
           <Text
-            fontSize={{ base: "xl", md: "2xl" }}
+            fontSize={{ base: "md", md: "2xl" }}
             color="gray.100"
             maxW="5xl"
+            mb={{ base: 8, md: 0 }}
             fontWeight="medium"
             lineHeight="1.6"
             textShadow="1px 1px 2px rgba(0,0,0,0.5)"
@@ -137,11 +138,11 @@ export const HeroSection = () => {
             estratégia e agilidade.
           </Text>
 
-          <HStack gap={3} align="center">
+          <HStack gap={3} align="center" flexWrap="wrap">
             {highlights.map((highlight, index) => (
               <Tag.Root
                 key={index}
-                size="lg"
+                size={{ base: "md", md: "lg" }}
                 variant="outline"
                 backdropFilter="blur(2px)"
                 rounded="full"
@@ -186,6 +187,7 @@ export const HeroSection = () => {
                 }}
                 transition="all 0.3s"
                 backdropFilter="blur(5px)"
+                color="black"
               >
                 Solicite uma Avaliação Gratuita
                 <ArrowRight size={20} />

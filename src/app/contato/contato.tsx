@@ -12,28 +12,41 @@ import {
   SimpleGrid,
   Icon,
   Field,
+  Link,
+  NativeSelect,
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { toaster } from "@/components/ui/toaster";
-import { Mail, Building } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const schema = yup.object().shape({
   name: yup.string().required("Nome é obrigatório"),
   email: yup.string().email("Email inválido").required("Email é obrigatório"),
   phone: yup.string().required("Telefone é obrigatório"),
-  companyName: yup.string().optional(),
-  position: yup.string().optional(),
+  companyName: yup.string().required("Nome da empresa é obrigatório"),
+  position: yup.string().required("Cargo é obrigatório"),
   employees: yup
     .number()
     .typeError("Número de funcionários deve ser um número")
     .positive("Número de funcionários deve ser positivo")
     .integer("Número de funcionários deve ser um número inteiro")
-    .optional(),
-  linkedin: yup.string().url("URL do LinkedIn inválida").optional(),
+    .required("Número de funcionários é obrigatório"),
+  serviceInterest: yup.string().required("Serviço de interesse é obrigatório"),
   message: yup.string().required("Mensagem é obrigatória"),
 });
+
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  companyName: string;
+  position: string;
+  employees: number;
+  serviceInterest: string;
+  message: string;
+}
 
 export const ContatoPage = () => {
   const {
@@ -41,11 +54,11 @@ export const ContatoPage = () => {
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
-  } = useForm({
+  } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: FormData) => {
     try {
       // Simulate form submission
       await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -66,14 +79,12 @@ export const ContatoPage = () => {
     }
   };
 
-  const bgColor = "bg.panel";
-  const borderColor = "border";
   const headingColor = "green.500";
   const iconColor = "green.300";
 
   return (
     <Container
-      maxW="8xl"
+      maxW="6xl"
       py={{ base: 10, md: 20 }}
       minH={{ base: "auto", md: "calc(80vh - 72px)" }}
     >
@@ -91,28 +102,38 @@ export const ContatoPage = () => {
             color={headingColor}
             mb={4}
           >
-            Entre em contato
+            Fale com nossos especialistas
           </Heading>
           <Text fontSize="lg" mb={8} color="fg.muted">
-            Estamos prontos para ajudar sua empresa a descobrir o potencial de
-            seus colaboradores através de nossa análise de personalidade.
+            Conectamos sua empresa às melhores soluções financeiras do mercado. 
+            Preencha o formulário e receba uma análise gratuita das oportunidades 
+            para o seu negócio.
           </Text>
 
           <VStack gap={6} align="start" mb={8}>
             <Flex align="center">
               <Icon as={Mail} boxSize={5} color={iconColor} mr={3} />
-              <Text
-                as="a"
-                // @ts-ignore
-                href="mailto:contato@acpersonalidade.com.br"
+              <Link
+                href="mailto:contato@financialhub.com.br"
                 color="green.400"
+                _hover={{ textDecoration: "underline" }}
               >
-                contato@acpersonalidade.com.br
-              </Text>
+                contato@financialhub.com.br
+              </Link>
             </Flex>
             <Flex align="center">
-              <Icon as={Building} boxSize={5} color={iconColor} mr={3} />
-              <Text>Curitiba, PR - Brasil</Text>
+              <Icon as={Phone} boxSize={5} color={iconColor} mr={3} />
+              <Link
+                href="tel:+5511942989475"
+                color="green.400"
+                _hover={{ textDecoration: "underline" }}
+              >
+                (11) 9429-89475
+              </Link>
+            </Flex>
+            <Flex align="center">
+              <Icon as={MapPin} boxSize={5} color={iconColor} mr={3} />
+              <Text>São Paulo, SP - Brasil</Text>
             </Flex>
           </VStack>
 
@@ -121,11 +142,11 @@ export const ContatoPage = () => {
             borderRadius="md"
             borderLeft="4px solid"
             borderColor={iconColor}
+            bg="bg.subtle"
           >
             <Text fontStyle="italic" fontSize="md">
-              "Nossa missão é transformar o ambiente de trabalho através do
-              autoconhecimento e da compreensão das características
-              individuais."
+              "Conectamos empresas a soluções financeiras completas, com foco em 
+              performance, expansão e sustentabilidade."
             </Text>
           </Box>
         </Box>
@@ -140,21 +161,20 @@ export const ContatoPage = () => {
           borderWidth="1px"
         >
           <Heading as="h2" fontSize="2xl" mb={6} color={headingColor}>
-            Preencha o formulário
+            Solicite uma avaliação gratuita
           </Heading>
 
           <Box as="form" onSubmit={handleSubmit(onSubmit)}>
-            <VStack gap={2}>
-              <SimpleGrid columns={{ base: 1, md: 2 }} gap={5} width="full">
+            <VStack gap={4}>
+              <SimpleGrid columns={{ base: 1, md: 2 }} gap={4} width="full">
                 <Field.Root invalid={!!errors.name}>
                   <Field.Label>
-                    Nome
+                    Nome completo
                     <Field.RequiredIndicator />
                   </Field.Label>
                   <Input
                     type="text"
                     {...register("name")}
-                    //   leftElement={<Icon as={User} color={iconColor} boxSize={4} />}
                     placeholder="Seu nome completo"
                   />
                   <Field.ErrorText>{errors.name?.message}</Field.ErrorText>
@@ -168,14 +188,13 @@ export const ContatoPage = () => {
                   <Input
                     type="email"
                     {...register("email")}
-                    //   leftElement={<Icon as={Mail} color={iconColor} boxSize={4} />}
                     placeholder="seu.email@exemplo.com"
                   />
                   <Field.ErrorText>{errors.email?.message}</Field.ErrorText>
                 </Field.Root>
               </SimpleGrid>
 
-              <SimpleGrid columns={{ base: 1, md: 2 }} gap={5} width="full">
+              <SimpleGrid columns={{ base: 1, md: 2 }} gap={4} width="full">
                 <Field.Root invalid={!!errors.phone}>
                   <Field.Label>
                     Telefone
@@ -184,21 +203,19 @@ export const ContatoPage = () => {
                   <Input
                     type="text"
                     {...register("phone")}
-                    //   leftElement={<Icon as={Phone} color={iconColor} boxSize={4} />}
-                    placeholder="(00) 00000-0000"
+                    placeholder="(11) 99999-9999"
                   />
                   <Field.ErrorText>{errors.phone?.message}</Field.ErrorText>
                 </Field.Root>
 
                 <Field.Root invalid={!!errors.companyName}>
                   <Field.Label>
-                    Nome da Empresa
+                    Nome da empresa
                     <Field.RequiredIndicator />
                   </Field.Label>
                   <Input
                     type="text"
                     {...register("companyName")}
-                    //   leftElement={<Icon as={Building} color={iconColor} boxSize={4} />}
                     placeholder="Nome da sua empresa"
                   />
                   <Field.ErrorText>
@@ -207,7 +224,7 @@ export const ContatoPage = () => {
                 </Field.Root>
               </SimpleGrid>
 
-              <SimpleGrid columns={{ base: 1, md: 2 }} gap={5} width="full">
+              <SimpleGrid columns={{ base: 1, md: 2 }} gap={4} width="full">
                 <Field.Root invalid={!!errors.position}>
                   <Field.Label>
                     Cargo
@@ -216,7 +233,6 @@ export const ContatoPage = () => {
                   <Input
                     type="text"
                     {...register("position")}
-                    //   leftElement={<Icon as={User} color={iconColor} boxSize={4} />}
                     placeholder="Seu cargo na empresa"
                   />
                   <Field.ErrorText>{errors.position?.message}</Field.ErrorText>
@@ -224,32 +240,39 @@ export const ContatoPage = () => {
 
                 <Field.Root invalid={!!errors.employees}>
                   <Field.Label>
-                    Número de Funcionários
+                    Número de funcionários
                     <Field.RequiredIndicator />
                   </Field.Label>
                   <Input
                     type="number"
                     min="1"
                     {...register("employees", { valueAsNumber: true })}
-                    //   leftElement={<Icon as={Users} color={iconColor} boxSize={4} />}
                     placeholder="Ex: 50"
                   />
                   <Field.ErrorText>{errors.employees?.message}</Field.ErrorText>
                 </Field.Root>
               </SimpleGrid>
 
-              <Field.Root invalid={!!errors.linkedin} width="full">
+              <Field.Root invalid={!!errors.serviceInterest} width="full">
                 <Field.Label>
-                  LinkedIn
+                  Serviço de interesse
                   <Field.RequiredIndicator />
                 </Field.Label>
-                <Input
-                  type="url"
-                  {...register("linkedin")}
-                  // leftElement={<Icon as={Linkedin} color={iconColor} boxSize={4} />}
-                  placeholder="https://linkedin.com/in/seu-perfil"
-                />
-                <Field.ErrorText>{errors.linkedin?.message}</Field.ErrorText>
+                <NativeSelect.Root>
+                  <NativeSelect.Field placeholder="Selecione um serviço" {...register("serviceInterest")}>
+                    <option value="">Selecione um serviço</option>
+                    <option value="captacao-recursos">Captação de recursos</option>
+                    <option value="credito-construcao">Crédito para construção</option>
+                    <option value="economia-energia">Economia com energia</option>
+                    <option value="valuation-ma">Valuation e M&A</option>
+                    <option value="mini-banco">Criação de mini-banco</option>
+                    <option value="expansao-internacional">Expansão internacional</option>
+                    <option value="seguros">Seguros empresariais</option>
+                    <option value="tecnologia-ia">Tecnologia e IA</option>
+                    <option value="outros">Outros</option>
+                  </NativeSelect.Field>
+                </NativeSelect.Root>
+                <Field.ErrorText>{errors.serviceInterest?.message}</Field.ErrorText>
               </Field.Root>
 
               <Field.Root invalid={!!errors.message} width="full">
@@ -259,8 +282,9 @@ export const ContatoPage = () => {
                 </Field.Label>
                 <Textarea
                   {...register("message")}
-                  placeholder="Descreva como podemos ajudar sua empresa"
+                  placeholder="Descreva brevemente sua necessidade ou interesse"
                   minHeight="120px"
+                  resize="vertical"
                 />
                 <Field.ErrorText>{errors.message?.message}</Field.ErrorText>
               </Field.Root>
@@ -275,7 +299,7 @@ export const ContatoPage = () => {
                 _hover={{ transform: "translateY(-2px)" }}
                 transition="all 0.2s"
               >
-                Enviar mensagem
+                {isSubmitting ? "Enviando..." : "Solicitar avaliação gratuita"}
               </Button>
             </VStack>
           </Box>

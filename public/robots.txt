@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://acpersonalidade.com.br/sitemap.xml
+Sitemap: https://finhubassessoria.com.br/sitemap.xml

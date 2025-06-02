@@ -8,15 +8,27 @@ import {
   Badge,
   Stack,
   Card,
+  Alert,
+  Flex,
 } from "@chakra-ui/react";
-import { Target, Eye, Heart, Award } from "lucide-react";
+import {
+  Target,
+  Eye,
+  Heart,
+  Shield,
+  Scale,
+  CheckCircle2,
+  Users2Icon,
+  TargetIcon,
+} from "lucide-react";
 
 export const AboutSection = () => {
   const values = [
     {
       icon: Target,
       title: "Missão",
-      description: "Fortalecer empresas com inteligência financeira e estratégica.",
+      description:
+        "Fortalecer empresas com inteligência financeira e estratégica.",
       color: "green",
     },
     {
@@ -24,29 +36,35 @@ export const AboutSection = () => {
       title: "Visão",
       description:
         "Ser referência nacional em assessoria empresarial moderna, ética e eficaz.",
-      color: "green",
+      color: "blue",
     },
     {
       icon: Heart,
       title: "Valores",
       description: "Confiança. Transparência. Performance. Inovação.",
-      color: "purple",
+      color: "red",
     },
   ];
 
-  const pillars = [
+  const differentials = [
     "Metodologia própria comprovada",
-    "Profundo conhecimento do ecossistema empresarial brasileiro",
+    "Rede com +50 parceiros financeiros e tecnológicos",
     "Atuação personalizada para cada cliente",
-    "Conformidade total com regulamentações vigentes",
+    "Experiência em operações complexas",
   ];
 
   return (
-    <Box py={{ base: 16, md: 24 }} bg="gray.50" as="section" id="quem-somos">
-      <Container maxW="8xl">
-        <VStack gap={16}>
+    <Box
+      py={{ base: 12, md: 20 }}
+      as="section"
+      id="quem-somos"
+      role="region"
+      aria-labelledby="about-heading"
+    >
+      <Container maxW="6xl">
+        <VStack gap={{ base: 12, md: 16 }}>
           {/* Header */}
-          <VStack gap={6} textAlign="center" maxW="4xl">
+          <VStack gap={4} textAlign="center" maxW="3xl" mx="auto">
             <Badge
               colorPalette="green"
               fontSize="sm"
@@ -54,171 +72,189 @@ export const AboutSection = () => {
               py={2}
               borderRadius="full"
               fontWeight="medium"
+              bg="green.600"
+              variant="solid"
             >
-              Quem Somos
+              <Flex align="center" gap={2}>
+                <TargetIcon size={16} />
+                <Text color="white">Quem Somos</Text>
+              </Flex>
             </Badge>
-            
+
             <Heading
-              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-              fontWeight="extrabold"
-              lineHeight="1.2"
+              id="about-heading"
+              fontSize={{ base: "2xl", md: "3xl", lg: "5xl" }}
+              fontWeight="bold"
+              lineHeight="1.3"
+              color="gray.900"
+              _dark={{ color: "white" }}
             >
-              <Text as="span" color="green.600">
+              <Text as="span" color="green.500" _dark={{ color: "green.400" }}>
                 Especialistas
               </Text>{" "}
-              em transformar estratégia em ação.
+              em transformar estratégia em ação
             </Heading>
+
+            <Text
+              fontSize={{ base: "md", md: "lg" }}
+              color="gray.600"
+              _dark={{ color: "gray.400" }}
+              lineHeight="1.6"
+              maxW="2xl"
+            >
+              Conectamos empresas às melhores soluções do mercado — de crédito à
+              tecnologia, de valuation à expansão internacional.
+            </Text>
           </VStack>
 
           <Stack
             direction={{ base: "column", lg: "row" }}
-            gap={16}
+            gap={{ base: 8, lg: 12 }}
             align="start"
             w="full"
           >
-            {/* Left side - About text */}
-            <VStack gap={8} flex={1.2} align="start">
-              <Text
-                fontSize={{ base: "lg", md: "xl" }}
-                color="gray.700"
-                lineHeight="1.7"
-                fontWeight="medium"
-              >
-                Somos uma assessoria financeira especializada em conectar
-                empresas às melhores soluções do mercado — de crédito à
-                tecnologia, de valuation à expansão internacional.
-              </Text>
-              
-              <Text
-                fontSize="lg"
-                color="gray.600"
-                lineHeight="1.6"
-              >
-                Atuamos de forma personalizada, com metodologia própria e
-                profundo conhecimento do ecossistema empresarial brasileiro.
-                Nossa missão é simplificar o complexo mundo financeiro e
-                conectar sua empresa às oportunidades certas.
-              </Text>
-
-              {/* Pillars */}
-              <Box w="full">
-                <Heading
-                  fontSize="xl"
-                  fontWeight="bold"
-                  color="gray.900"
-                  mb={6}
-                >
-                  Nossos Pilares
-                </Heading>
-                
-                <VStack gap={4} align="start">
-                  {pillars.map((pillar, index) => (
-                    <HStack key={index} gap={3} align="start">
-                      <Box
-                        width="8px"
-                        height="8px"
-                        bg="green.500"
-                        borderRadius="full"
-                        mt="8px"
-                        flexShrink={0}
-                      />
-                      <Text
-                        color="gray.700"
-                        fontSize="md"
-                        lineHeight="1.6"
-                        fontWeight="medium"
-                      >
-                        {pillar}
-                      </Text>
-                    </HStack>
-                  ))}
-                </VStack>
-              </Box>
-            </VStack>
-
-            {/* Right side - Mission, Vision, Values */}
-            <VStack gap={6} flex={1}>
+            {/* Left side - Mission, Vision, Values */}
+            <VStack gap={4} flex={1}>
               {values.map((value, index) => {
                 const IconComponent = value.icon;
                 return (
-                  <Card.Root
-                    key={index}
-                    variant="elevated"
-                    size="lg"
-                    bg="white"
-                    w="full"
-                    _hover={{
-                      transform: "translateY(-4px)",
-                      boxShadow: "xl",
-                    }}
-                    transition="all 0.3s ease"
-                  >
-                    <Card.Body p={6}>
-                      <VStack align="start" gap={4}>
-                        <HStack gap={3}>
-                          <Box
-                            p={2}
-                            bg={`${value.color}.100`}
-                            borderRadius="lg"
-                          >
-                            <IconComponent
-                              size={20}
-                              color={`var(--acp-colors-${value.color}-600)`}
-                            />
-                          </Box>
-                          
-                          <Heading
-                            fontSize="lg"
-                            fontWeight="bold"
-                            color="gray.900"
-                          >
-                            {value.title}
-                          </Heading>
-                        </HStack>
-                        
-                        <Text
-                          color="gray.600"
-                          fontSize="md"
-                          lineHeight="1.6"
-                          fontStyle={value.title === "Valores" ? "italic" : "normal"}
-                          fontWeight={value.title === "Valores" ? "semibold" : "normal"}
-                        >
-                          {value.description}
-                        </Text>
-                      </VStack>
-                    </Card.Body>
-                  </Card.Root>
+                  <HStack gap={3} align="start" key={index} w="full">
+                    <Box
+                      p={4}
+                      bg={`${value.color}.100`}
+                      _dark={{ bg: `${value.color}.900` }}
+                      borderRadius="md"
+                      flexShrink={0}
+                    >
+                      <IconComponent
+                        size={16}
+                        style={{
+                          color: `var(--chakra-colors-${value.color}-600)`,
+                        }}
+                        aria-hidden="true"
+                      />
+                    </Box>
+
+                    <VStack align="start" gap={0} flex={1}>
+                      <Heading
+                        fontSize="md"
+                        fontWeight="semibold"
+                        color="gray.900"
+                        _dark={{ color: "white" }}
+                      >
+                        {value.title}
+                      </Heading>
+
+                      <Text
+                        color="gray.600"
+                        _dark={{ color: "gray.400" }}
+                        fontSize="sm"
+                        lineHeight="1.5"
+                        fontStyle={
+                          value.title === "Valores" ? "italic" : "normal"
+                        }
+                        fontWeight={
+                          value.title === "Valores" ? "medium" : "normal"
+                        }
+                      >
+                        {value.description}
+                      </Text>
+                    </VStack>
+                  </HStack>
                 );
               })}
+            </VStack>
 
-              {/* Compliance notice */}
-              <Box
-                p={6}
-                bg="green.50"
-                borderRadius="xl"
+            {/* Right side - Differentials and Compliance */}
+            <VStack gap={6} flex={1}>
+              {/* Regulatory Compliance - Mandatory Information */}
+              <Alert.Root
+                status="info"
+                variant="subtle"
+                bg="blue.50"
+                _dark={{
+                  bg: "blue.900/20",
+                  borderColor: "blue.800",
+                }}
                 border="1px solid"
-                borderColor="green.100"
-                w="full"
+                borderColor="blue.100"
+                borderRadius="lg"
+                role="region"
+                aria-labelledby="compliance-heading"
               >
-                <VStack gap={3} align="start">
-                  <HStack gap={2}>
-                    <Award size={20} color="var(--acp-colors-green-600)" />
-                    <Heading fontSize="md" fontWeight="bold" color="green.800">
-                      Conformidade Regulatória
-                    </Heading>
-                  </HStack>
-                  
-                  <Text fontSize="sm" color="green.700" lineHeight="1.5">
-                    Atuamos em total conformidade com as regulamentações do
-                    BACEN, CVM e SUSEP, garantindo segurança jurídica em todas
-                    as nossas operações.
+                <Alert.Indicator asChild>
+                  <Shield size={18} />
+                </Alert.Indicator>
+                <VStack gap={3} align="start" flex={1}>
+                  <Heading
+                    id="compliance-heading"
+                    fontSize="sm"
+                    fontWeight="semibold"
+                    color="blue.800"
+                    _dark={{ color: "blue.200" }}
+                  >
+                    Conformidade Regulatória
+                  </Heading>
+
+                  <Text
+                    color="blue.700"
+                    _dark={{ color: "blue.300" }}
+                    lineHeight="1.4"
+                  >
+                    A Finhub atua exclusivamente como intermediadora estratégica
+                    entre clientes e instituições habilitadas pelo BACEN, CVM,
+                    SUSEP e demais órgãos reguladores. Não realizamos captação,
+                    intermediação financeira direta ou gestão de recursos de
+                    terceiros.
                   </Text>
                 </VStack>
-              </Box>
+              </Alert.Root>
+
+              {/* Legal Notice */}
+              <Alert.Root
+                status="warning"
+                variant="subtle"
+                bg="yellow.50"
+                _dark={{
+                  bg: "yellow.900/20",
+                  borderColor: "yellow.800",
+                }}
+                border="1px solid"
+                borderColor="yellow.100"
+                borderRadius="lg"
+                role="region"
+                aria-labelledby="legal-heading"
+              >
+                <Alert.Indicator asChild>
+                  <Scale size={18} />
+                </Alert.Indicator>
+                <VStack gap={2} align="start" flex={1}>
+                  <Heading
+                    id="legal-heading"
+                    fontSize="sm"
+                    fontWeight="semibold"
+                    color="yellow.800"
+                    _dark={{ color: "yellow.200" }}
+                  >
+                    Aviso Legal
+                  </Heading>
+
+                  <Text
+                    color="yellow.700"
+                    _dark={{ color: "yellow.300" }}
+                    lineHeight="1.4"
+                  >
+                    A Finhub não oferece garantias de aprovação, concessão de
+                    crédito ou retorno financeiro. Recomendamos análise
+                    criteriosa dos contratos junto às instituições executoras
+                    das operações.
+                  </Text>
+                </VStack>
+              </Alert.Root>
             </VStack>
           </Stack>
         </VStack>
       </Container>
     </Box>
   );
-}; 
+};

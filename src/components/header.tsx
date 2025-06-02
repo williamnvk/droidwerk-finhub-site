@@ -58,14 +58,14 @@ export const Header = () => {
                 fontWeight="bold"
                 color="green.500"
               >
-                Fin
+                FIN
                 <Heading
                   as="span"
                   fontSize={{ base: "xl", md: "2xl" }}
                   fontWeight="bold"
                   color="white"
                 >
-                  hub
+                  Hub
                 </Heading>
               </Heading>
               <Text

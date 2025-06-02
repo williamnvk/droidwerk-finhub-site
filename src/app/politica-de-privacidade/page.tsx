@@ -16,10 +16,10 @@ export default function PoliticaDePrivacidade() {
   return (
     <Box>
       <Head>
-        <title>Política de Privacidade - Finhub Assessoria</title>
+        <title>Política de Privacidade - Financial Hub Assessoria</title>
         <meta
           name="description"
-          content="Política de Privacidade da plataforma Finhub Assessoria - Análise científica de personalidade para processos seletivos e desenvolvimento profissional."
+          content="Política de Privacidade da Financial Hub Assessoria - Assessoria financeira especializada em conectar empresas às melhores soluções do mercado."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -38,65 +38,228 @@ export default function PoliticaDePrivacidade() {
           </Heading>
 
           <Text>
-            Bem-vindo à Política de Privacidade do Finhub Assessoria. Sua privacidade é extremamente importante para nós. 
-            Esta política descreve como coletamos, usamos e protegemos suas informações pessoais durante a utilização 
-            de nossa plataforma de análise científica de personalidade.
+            A Financial Hub Assessoria valoriza e respeita a privacidade dos seus clientes e usuários. 
+            Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos 
+            suas informações pessoais quando você utiliza nossos serviços de assessoria financeira ou 
+            interage com nosso website.
           </Text>
 
-          <Text>
+          <Text fontSize="sm" color="gray.600" _dark={{ color: "gray.400" }}>
             Última atualização: {new Date().toLocaleDateString("pt-BR")}
           </Text>
 
           <VStack align="stretch" gap={6}>
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Quem Somos
+                1. Quem Somos
               </Heading>
               <Text>
-                O Finhub Assessoria é uma plataforma especializada em análise científica de personalidade para processos 
-                seletivos e desenvolvimento profissional. Nossa missão é fornecer ferramentas baseadas em ciência para 
-                ajudar empresas a tomar melhores decisões de contratação e desenvolvimento de talentos.
+                A Financial Hub Assessoria é uma empresa especializada em assessoria financeira empresarial, 
+                que atua como intermediadora estratégica conectando empresas às melhores soluções do mercado 
+                financeiro. Nossa sede está localizada em São Paulo - SP, e prestamos serviços em todo 
+                território nacional.
+              </Text>
+              <Text mt={3}>
+                <strong>Dados de contato do controlador:</strong><br />
+                Financial Hub Assessoria<br />
+                E-mail: contato@financialhub.com.br<br />
+                Telefone: (11) 94298-9475<br />
+                Endereço: São Paulo - SP
               </Text>
             </Box>
 
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Coleta de Informações
+                2. Informações que Coletamos
               </Heading>
               <Text mb={3}>
-                Coletamos informações pessoais que você nos fornece diretamente, como quando você cria uma conta, 
-                atualiza seu perfil, responde aos questionários ou utiliza nossos serviços. Estas informações podem incluir:
+                Coletamos informações pessoais que você nos fornece diretamente ou que obtemos 
+                através de sua interação com nossos serviços. Essas informações incluem:
+              </Text>
+              
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                2.1 Dados de Identificação e Contato
+              </Heading>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Nome completo e nome social</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>E-mail e telefones</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Endereço residencial e/ou comercial</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Documentos de identificação (CPF, RG, CNH)</Text>
+                </HStack>
+              </VStack>
+
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                2.2 Informações Profissionais e Empresariais
+              </Heading>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Cargo e função na empresa</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Dados da empresa (razão social, CNPJ, porte)</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Informações financeiras e patrimoniais</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Histórico creditício e bancário</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Demonstrações financeiras e documentos contábeis</Text>
+                </HStack>
+              </VStack>
+
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                2.3 Dados de Navegação
+              </Heading>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Endereço IP e localização geográfica</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Informações do navegador e dispositivo</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Páginas visitadas e tempo de permanência</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Origem do acesso e links clicados</Text>
+                </HStack>
+              </VStack>
+            </Box>
+
+            <Box>
+              <Heading as="h2" size="lg" mb={3}>
+                3. Como Utilizamos suas Informações
+              </Heading>
+              <Text mb={3}>Utilizamos suas informações pessoais para as seguintes finalidades:</Text>
+              
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                3.1 Prestação de Serviços
+              </Heading>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Análise do perfil creditício e financeiro</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Estruturação de propostas financeiras</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Intermediação junto a instituições financeiras parceiras</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Acompanhamento de processos e operações</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Assessoria estratégica personalizada</Text>
+                </HStack>
+              </VStack>
+
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                3.2 Comunicação e Relacionamento
+              </Heading>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Atendimento ao cliente e suporte técnico</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Envio de informações sobre produtos e serviços</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Newsletter e conteúdo educativo</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Pesquisas de satisfação</Text>
+                </HStack>
+              </VStack>
+
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                3.3 Melhorias e Segurança
+              </Heading>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Aprimoramento dos serviços oferecidos</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Análise estatística e pesquisa de mercado</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Prevenção de fraudes e atividades suspeitas</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Cumprimento de obrigações legais e regulatórias</Text>
+                </HStack>
+              </VStack>
+            </Box>
+
+            <Box>
+              <Heading as="h2" size="lg" mb={3}>
+                4. Base Legal para o Tratamento
+              </Heading>
+              <Text mb={3}>
+                O tratamento de seus dados pessoais é realizado com base nas seguintes hipóteses legais 
+                previstas na Lei Geral de Proteção de Dados (LGPD):
               </Text>
               <VStack align="stretch" pl={5} gap={2}>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
                   <Text>
-                    <strong>Dados de identificação:</strong> Nome, e-mail, telefone.
+                    <strong>Execução de contrato:</strong> Para cumprimento de contrato 
+                    de prestação de serviços de assessoria financeira
                   </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
                   <Text>
-                    <strong>Informações profissionais:</strong> Cargo, empresa, histórico profissional.
+                    <strong>Consentimento:</strong> Quando você autoriza expressamente 
+                    o tratamento para finalidades específicas
                   </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
                   <Text>
-                    <strong>Respostas aos questionários de personalidade.</strong>
+                    <strong>Interesse legítimo:</strong> Para melhoria dos serviços, 
+                    comunicação comercial e análises estatísticas
                   </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
                   <Text>
-                    <strong>Dados de uso da plataforma.</strong>
-                  </Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>
-                    <strong>Informações do dispositivo:</strong> Hardware,
-                    sistema operacional, navegador e configurações.
+                    <strong>Cumprimento de obrigação legal:</strong> Para atender 
+                    exigências de órgãos reguladores e fiscais
                   </Text>
                 </HStack>
               </VStack>
@@ -104,65 +267,107 @@ export default function PoliticaDePrivacidade() {
 
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Uso de Cookies e Tecnologias Semelhantes
+                5. Compartilhamento de Informações
               </Heading>
               <Text mb={3}>
-                Utilizamos cookies e tecnologias semelhantes para melhorar sua
-                experiência em nosso site:
+                Podemos compartilhar suas informações pessoais nas seguintes situações:
+              </Text>
+              
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                5.1 Instituições Financeiras Parceiras
+              </Heading>
+              <Text mb={2}>
+                Compartilhamos informações necessárias com bancos, fintechs, fundos de investimento 
+                e outras instituições financeiras para análise e aprovação de operações, sempre 
+                com seu consentimento prévio e expresso.
+              </Text>
+
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                5.2 Prestadores de Serviços
+              </Heading>
+              <Text mb={2}>
+                Compartilhamos dados com empresas que nos auxiliam na prestação de serviços, como:
               </Text>
               <VStack align="stretch" pl={5} gap={2}>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>
-                    <strong>Cookies essenciais:</strong> Necessários para o
-                    funcionamento do site. Eles permitem recursos básicos como
-                    navegação e acesso a áreas seguras.
-                  </Text>
+                  <Text>Empresas de tecnologia e hospedagem</Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>
-                    <strong>Cookies de preferências:</strong> Permitem que o
-                    site lembre informações que mudam a aparência ou o
-                    comportamento do site, como seu idioma preferido.
-                  </Text>
+                  <Text>Serviços de comunicação e marketing</Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>
-                    <strong>Cookies estatísticos:</strong> Ajudam-nos a entender
-                    como os visitantes interagem com o site, coletando e
-                    relatando informações anonimamente.
-                  </Text>
+                  <Text>Consultorias especializadas</Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>
-                    <strong>Cookies de marketing:</strong> Usados para rastrear
-                    visitantes em sites. A intenção é exibir anúncios relevantes
-                    e envolventes para o usuário.
-                  </Text>
+                  <Text>Serviços de análise creditícia</Text>
                 </HStack>
               </VStack>
+
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                5.3 Autoridades Competentes
+              </Heading>
+              <Text mb={2}>
+                Quando necessário para cumprimento de obrigações legais ou por determinação 
+                judicial, compartilhamos informações com órgãos reguladores, autoridades 
+                fiscais e judiciárias.
+              </Text>
             </Box>
 
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Como Gerenciar Cookies
+                6. Cookies e Tecnologias de Rastreamento
               </Heading>
               <Text mb={3}>
-                Você pode controlar e/ou excluir cookies conforme desejar. Você
-                pode excluir todos os cookies que já estão no seu computador e
-                pode configurar a maioria dos navegadores para impedir que eles
-                sejam instalados. Se você fizer isso, no entanto, poderá ter que
-                ajustar manualmente algumas preferências sempre que visitar um
-                site e alguns serviços e funcionalidades podem não funcionar.
+                Utilizamos cookies e tecnologias similares para melhorar sua experiência 
+                em nosso website e coletar informações sobre seu uso:
               </Text>
-              <Text>
-                Para saber mais sobre como gerenciar cookies em diferentes
-                navegadores, visite os links abaixo:
+              
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                6.1 Tipos de Cookies
+              </Heading>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>
+                    <strong>Cookies essenciais:</strong> Necessários para o funcionamento 
+                    básico do website
+                  </Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>
+                    <strong>Cookies de performance:</strong> Coletam informações sobre 
+                    como você usa o site
+                  </Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>
+                    <strong>Cookies de funcionalidade:</strong> Permitem que o site 
+                    lembre suas preferências
+                  </Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>
+                    <strong>Cookies de marketing:</strong> Usados para personalizar 
+                    anúncios e medir campanhas
+                  </Text>
+                </HStack>
+              </VStack>
+
+              <Heading as="h3" size="md" mb={2} mt={4}>
+                6.2 Gerenciamento de Cookies
+              </Heading>
+              <Text mb={3}>
+                Você pode controlar o uso de cookies através das configurações do seu navegador. 
+                Consulte os links abaixo para instruções específicas:
               </Text>
-              <VStack align="stretch" pl={5} gap={2} mt={2}>
+              <VStack align="stretch" pl={5} gap={2}>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
                   <Link
@@ -172,12 +377,7 @@ export default function PoliticaDePrivacidade() {
                     rel="noopener noreferrer"
                   >
                     Google Chrome
-                    <Box
-                      as="span"
-                      ml={1}
-                      display="inline-flex"
-                      alignItems="center"
-                    >
+                    <Box as="span" ml={1} display="inline-flex" alignItems="center">
                       <ExternalLinkIcon size={12} />
                     </Box>
                   </Link>
@@ -191,12 +391,7 @@ export default function PoliticaDePrivacidade() {
                     rel="noopener noreferrer"
                   >
                     Mozilla Firefox
-                    <Box
-                      as="span"
-                      ml={1}
-                      display="inline-flex"
-                      alignItems="center"
-                    >
+                    <Box as="span" ml={1} display="inline-flex" alignItems="center">
                       <ExternalLinkIcon size={12} />
                     </Box>
                   </Link>
@@ -210,12 +405,7 @@ export default function PoliticaDePrivacidade() {
                     rel="noopener noreferrer"
                   >
                     Microsoft Edge
-                    <Box
-                      as="span"
-                      ml={1}
-                      display="inline-flex"
-                      alignItems="center"
-                    >
+                    <Box as="span" ml={1} display="inline-flex" alignItems="center">
                       <ExternalLinkIcon size={12} />
                     </Box>
                   </Link>
@@ -229,12 +419,7 @@ export default function PoliticaDePrivacidade() {
                     rel="noopener noreferrer"
                   >
                     Safari
-                    <Box
-                      as="span"
-                      ml={1}
-                      display="inline-flex"
-                      alignItems="center"
-                    >
+                    <Box as="span" ml={1} display="inline-flex" alignItems="center">
                       <ExternalLinkIcon size={12} />
                     </Box>
                   </Link>
@@ -244,201 +429,249 @@ export default function PoliticaDePrivacidade() {
 
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Uso das Informações
-              </Heading>
-              <Text mb={3}>Usamos as informações que coletamos para:</Text>
-              <VStack align="stretch" pl={5} gap={2}>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Fornecer análises precisas de perfil de personalidade.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Personalizar sua experiência na plataforma.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Melhorar nossos algoritmos e metodologias de avaliação.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Enviar comunicações relevantes sobre nossos serviços.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Fornecer suporte técnico e atendimento ao cliente.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Proteger contra atividades fraudulentas e abusos.</Text>
-                </HStack>
-              </VStack>
-            </Box>
-
-            <Box>
-              <Heading as="h2" size="lg" mb={3}>
-                Base Legal para Processamento
-              </Heading>
-              <Text mb={3}>Processamos seus dados pessoais com base nas seguintes condições legais:</Text>
-              <VStack align="stretch" pl={5} gap={2}>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Execução de contrato quando você utiliza nossos serviços.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Consentimento explícito para processamento de dados sensíveis.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Interesses legítimos para melhorar nossos serviços.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Cumprimento de obrigações legais.</Text>
-                </HStack>
-              </VStack>
-            </Box>
-
-            <Box>
-              <Heading as="h2" size="lg" mb={3}>
-                Compartilhamento de Informações
+                7. Segurança dos Dados
               </Heading>
               <Text mb={3}>
-                Não compartilhamos suas informações pessoais com terceiros, exceto:
+                Implementamos medidas técnicas e organizacionais adequadas para proteger 
+                suas informações pessoais contra acesso não autorizado, alteração, divulgação 
+                ou destruição indevida:
+              </Text>
+              <VStack align="stretch" pl={5} gap={2}>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Criptografia de dados em trânsito e em repouso</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Controles de acesso baseados em funções</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Monitoramento contínuo de segurança</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Backup seguro e plano de recuperação</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Treinamento regular da equipe em segurança da informação</Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>Auditorias periódicas de segurança</Text>
+                </HStack>
+              </VStack>
+            </Box>
+
+            <Box>
+              <Heading as="h2" size="lg" mb={3}>
+                8. Retenção de Dados
+              </Heading>
+              <Text mb={3}>
+                Mantemos seus dados pessoais pelo tempo necessário para cumprir as finalidades 
+                para as quais foram coletados, observando os seguintes critérios:
               </Text>
               <VStack align="stretch" pl={5} gap={2}>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
                   <Text>
-                    Com a empresa contratante, quando você participa de um processo seletivo ou avaliação 
-                    (apenas os resultados da análise, conforme consentimento prévio).
+                    <strong>Dados contratuais:</strong> Durante a vigência do contrato 
+                    e por 5 anos após o encerramento
                   </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
                   <Text>
-                    Com prestadores de serviços que nos auxiliam na operação da plataforma 
-                    (sempre com contratos de proteção de dados).
+                    <strong>Dados financeiros:</strong> Conforme exigências legais e 
+                    regulatórias (geralmente 5 a 10 anos)
                   </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Quando necessário para cumprir com obrigações legais.</Text>
+                  <Text>
+                    <strong>Dados de navegação:</strong> Até 12 meses após a coleta
+                  </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Com seu consentimento explícito.</Text>
+                  <Text>
+                    <strong>Dados com consentimento:</strong> Até a retirada do consentimento 
+                    pelo titular
+                  </Text>
                 </HStack>
               </VStack>
             </Box>
 
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Segurança das Informações
+                9. Seus Direitos
               </Heading>
               <Text mb={3}>
-                Implementamos medidas técnicas e organizacionais rigorosas para proteger suas informações pessoais 
-                contra acesso não autorizado, alteração, divulgação ou destruição. Estas medidas incluem:
+                Como titular de dados pessoais, você possui os seguintes direitos garantidos 
+                pela LGPD:
               </Text>
               <VStack align="stretch" pl={5} gap={2}>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Criptografia de dados sensíveis.</Text>
+                  <Text>
+                    <strong>Confirmação e acesso:</strong> Saber se tratamos seus dados 
+                    e ter acesso aos dados
+                  </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Controles de acesso rigorosos.</Text>
+                  <Text>
+                    <strong>Correção:</strong> Solicitar a correção de dados incompletos, 
+                    inexatos ou desatualizados
+                  </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Monitoramento contínuo de segurança.</Text>
+                  <Text>
+                    <strong>Anonimização ou eliminação:</strong> Solicitar a anonimização 
+                    ou eliminação de dados desnecessários
+                  </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Treinamento regular da equipe em práticas de segurança.</Text>
+                  <Text>
+                    <strong>Portabilidade:</strong> Solicitar a portabilidade dos dados 
+                    para outro fornecedor
+                  </Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>
+                    <strong>Eliminação:</strong> Solicitar a eliminação de dados tratados 
+                    com base no consentimento
+                  </Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>
+                    <strong>Informação:</strong> Obter informações sobre entidades com 
+                    as quais compartilhamos dados
+                  </Text>
+                </HStack>
+                <HStack align="flex-start" gap={2}>
+                  <Text>•</Text>
+                  <Text>
+                    <strong>Revogação do consentimento:</strong> Retirar o consentimento 
+                    a qualquer momento
+                  </Text>
                 </HStack>
               </VStack>
+              
+              <Text mt={4}>
+                Para exercer seus direitos, entre em contato conosco através dos canais 
+                indicados na seção "Contato".
+              </Text>
             </Box>
 
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Seus Direitos
+                10. Transferência Internacional de Dados
+              </Heading>
+              <Text>
+                Alguns de nossos prestadores de serviços podem estar localizados fora do Brasil. 
+                Nestes casos, adotamos medidas adequadas para garantir que suas informações 
+                pessoais recebam um nível de proteção adequado, incluindo cláusulas contratuais 
+                padrão aprovadas pela Autoridade Nacional de Proteção de Dados (ANPD).
+              </Text>
+            </Box>
+
+            <Box>
+              <Heading as="h2" size="lg" mb={3}>
+                11. Alterações nesta Política
+              </Heading>
+              <Text>
+                Esta Política de Privacidade pode ser atualizada periodicamente para refletir 
+                mudanças em nossas práticas de tratamento de dados, na legislação aplicável ou 
+                em nossos serviços. Quando houver alterações materiais, notificaremos você através 
+                do e-mail cadastrado ou por meio de aviso destacado em nosso website. 
+                Recomendamos que você revise esta política regularmente.
+              </Text>
+            </Box>
+
+            <Box>
+              <Heading as="h2" size="lg" mb={3}>
+                12. Contato e Encarregado de Dados
               </Heading>
               <Text mb={3}>
-                De acordo com as leis de proteção de dados aplicáveis, você tem os seguintes direitos:
+                Para exercer seus direitos, esclarecer dúvidas sobre esta política ou 
+                relatar questões relacionadas ao tratamento de dados pessoais, entre em 
+                contato conosco:
               </Text>
+              
               <VStack align="stretch" pl={5} gap={2}>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Acesso aos seus dados pessoais.</Text>
+                  <Text>
+                    <strong>E-mail:</strong>{" "}
+                    <Link href="mailto:contato@financialhub.com.br" color="green.500">
+                      contato@financialhub.com.br
+                    </Link>
+                  </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Correção de dados imprecisos.</Text>
+                  <Text>
+                    <strong>Telefone:</strong> (11) 94298-9475
+                  </Text>
                 </HStack>
                 <HStack align="flex-start" gap={2}>
                   <Text>•</Text>
-                  <Text>Exclusão de seus dados (sujeito a certas condições).</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Restrição ou objeção ao processamento.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Portabilidade de dados.</Text>
-                </HStack>
-                <HStack align="flex-start" gap={2}>
-                  <Text>•</Text>
-                  <Text>Retirada de consentimento a qualquer momento.</Text>
+                  <Text>
+                    <strong>Endereço:</strong> São Paulo - SP
+                  </Text>
                 </HStack>
               </VStack>
-            </Box>
 
-            <Box>
-              <Heading as="h2" size="lg" mb={3}>
-                Retenção de Dados
-              </Heading>
-              <Text>
-                Mantemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades para as quais 
-                foram coletados, incluindo obrigações legais, contábeis ou de relatórios. Para determinar o período 
-                apropriado de retenção, consideramos a quantidade, natureza e sensibilidade dos dados, o risco potencial 
-                de danos por uso não autorizado e os requisitos legais aplicáveis.
+              <Text mt={4}>
+                Você também pode apresentar reclamações à Autoridade Nacional de Proteção 
+                de Dados (ANPD) através do website{" "}
+                <Link
+                  href="https://www.gov.br/anpd/"
+                  color="green.500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  www.gov.br/anpd
+                  <Box as="span" ml={1} display="inline-flex" alignItems="center">
+                    <ExternalLinkIcon size={12} />
+                  </Box>
+                </Link>
+                .
               </Text>
             </Box>
 
             <Box>
               <Heading as="h2" size="lg" mb={3}>
-                Alterações a Esta Política
+                13. Legislação Aplicável
               </Heading>
               <Text>
-                Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas 
-                ou por outros motivos operacionais, legais ou regulatórios. Notificaremos você sobre quaisquer alterações 
-                materiais publicando a nova política em nosso site e, quando apropriado, enviando um aviso direto.
-              </Text>
-            </Box>
-
-            <Box>
-              <Heading as="h2" size="lg" mb={3}>
-                Contato
-              </Heading>
-              <Text>
-                Se você tiver alguma dúvida sobre esta Política de Privacidade ou desejar exercer seus direitos 
-                relacionados aos seus dados pessoais, entre em contato com nosso Encarregado de Proteção de Dados 
-                através do email: <Link href="mailto:contato@acpersonalidade.com" color="green.500">contato@acpersonalidade.com</Link> ou pelo telefone (42) 98838-1261.
+                Esta Política de Privacidade é regida pela legislação brasileira, em especial 
+                pela Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), pelo Marco 
+                Civil da Internet (Lei nº 12.965/2014) e pelo Código de Defesa do Consumidor 
+                (Lei nº 8.078/1990).
               </Text>
             </Box>
           </VStack>
 
-          <Text
-            fontSize="sm"
-            color="gray.600"
-            _dark={{ color: "gray.400" }}
-            mt={4}
+          <Box
+            p={4}
+            bg="gray.50"
+            _dark={{ bg: "gray.800" }}
+            borderRadius="md"
+            borderLeft="4px solid"
+            borderLeftColor="green.500"
           >
-            Última atualização: 07 de Março de 2025
-          </Text>
+            <Text fontSize="sm" color="gray.700" _dark={{ color: "gray.300" }}>
+              <strong>Data de vigência:</strong> Esta política entra em vigor em{" "}
+              {new Date().toLocaleDateString("pt-BR")} e substitui todas as versões anteriores.
+            </Text>
+          </Box>
         </VStack>
       </Container>
 

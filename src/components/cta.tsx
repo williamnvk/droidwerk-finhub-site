@@ -11,7 +11,7 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { ArrowRight, Star, Phone } from "lucide-react";
+import { ArrowRight, Star, Phone, TrendingUp } from "lucide-react";
 
 export const CTASection = () => (
   <Box
@@ -46,18 +46,19 @@ export const CTASection = () => (
       <VStack gap={10}>
         <HStack justify="center">
           <Badge
-            bg="white"
+            colorPalette="green"
             fontSize="sm"
             px={4}
-            py={2}
+            py={3}
             borderRadius="full"
-            color="green.500"
-            fontWeight="bold"
-            boxShadow="md"
+            fontWeight="medium"
+            bg="green.400"
+            backdropFilter="blur(10px)"
+            color="green.800"
           >
             <Flex align="center" gap={2}>
-              <Star size={16} />
-              <Text>Sua empresa no próximo nível</Text>
+              <TrendingUp size={16} />
+              <Text color="green.800">Sua empresa no próximo nível</Text>
             </Flex>
           </Badge>
         </HStack>
@@ -78,8 +79,8 @@ export const CTASection = () => (
           fontWeight="medium"
         >
           Preencha o formulário e fale com um dos nossos especialistas. A
-          primeira conversa é gratuita e sem compromisso. Entenda quais
-          soluções se encaixam no seu momento empresarial.
+          primeira conversa é gratuita e sem compromisso. Entenda quais soluções
+          se encaixam no seu momento empresarial.
         </Text>
         <Stack
           direction={{ base: "column", md: "row" }}
@@ -98,14 +99,10 @@ export const CTASection = () => (
               size="lg"
               variant="solid"
               bg="white"
-              color="green.500"
-              fontWeight="bold"
+              color="green.600"
               px={8}
               _hover={{
                 transform: "translateY(-2px)",
-                boxShadow: "xl",
-                bg: "white",
-                color: "green.500",
               }}
               transition="all 0.3s"
             >
@@ -123,9 +120,6 @@ export const CTASection = () => (
               fontWeight="medium"
               _hover={{
                 transform: "translateY(-2px)",
-                boxShadow: "xl",
-                bg: "green.500",
-                color: "white",
               }}
             >
               Conheça nossa empresa
@@ -134,7 +128,8 @@ export const CTASection = () => (
           </NextLink>
         </Stack>
         <Text fontSize="sm" color="whiteAlpha.800" pt={2}>
-          Primeira consulta gratuita • Sem compromisso • Atendimento personalizado
+          Primeira consulta gratuita • Sem compromisso • Atendimento
+          personalizado
         </Text>
       </VStack>
     </Container>

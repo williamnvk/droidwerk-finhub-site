@@ -14,7 +14,7 @@ import NextLink from "next/link";
 
 export const Footer = () => (
   <Box>
-    <Container maxW="8xl" py={{ base: 12, md: 16 }}>
+    <Container maxW="6xl" py={{ base: 12, md: 16 }}>
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 4 }}
         gap={{ base: 8, lg: 12 }}

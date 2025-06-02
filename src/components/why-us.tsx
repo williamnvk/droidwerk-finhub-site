@@ -110,7 +110,7 @@ export const WhyUsSection = () => {
           {/* Differentials Grid - All cards with same size */}
           <SimpleGrid
             columns={{ base: 1, sm: 2, lg: 3, xl: 5 }}
-            gap={{ base: 4, md: 6 }}
+            gap={{ base: 0, md: 6 }}
             w="full"
             role="list"
             aria-label="Nossos diferenciais"
@@ -123,7 +123,7 @@ export const WhyUsSection = () => {
                   gap={4}
                   p={{ base: 4, md: 6 }}
                   borderRadius="xl"
-                  border="1px solid"
+                  borderWidth={{ base: 0, md: 1 }}
                   borderColor="gray.200"
                   textAlign="center"
                   role="listitem"

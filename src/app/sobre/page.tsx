@@ -9,12 +9,32 @@ import {
   Stack,
   Card,
   SimpleGrid,
+  Flex,
+  Button,
+  Grid,
+  GridItem,
 } from "@chakra-ui/react";
 import type { Metadata } from "next";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 import { CTASection } from "../../components/cta";
-import { Target, Eye, Heart, Award, Users, TrendingUp } from "lucide-react";
+import { 
+  Target, 
+  Eye, 
+  Heart, 
+  Award, 
+  Users, 
+  TrendingUp,
+  Shield,
+  CheckCircle,
+  Star,
+  ArrowRight,
+  Building,
+  MapPin,
+  Phone,
+  Mail
+} from "lucide-react";
+import NextLink from "next/link";
 
 export const metadata: Metadata = {
   title: "Sobre a Financial Hub Assessoria | Especialistas em Soluções Financeiras",
@@ -85,13 +105,13 @@ export default function SobrePage() {
       title: "Visão",
       description:
         "Ser referência nacional em assessoria empresarial moderna, ética e eficaz.",
-      color: "green",
+      color: "blue",
     },
     {
       icon: Heart,
       title: "Valores",
       description: "Confiança. Transparência. Performance. Inovação.",
-      color: "purple",
+      color: "red",
     },
   ];
 
@@ -100,19 +120,45 @@ export default function SobrePage() {
       icon: Users,
       number: "50+",
       label: "Parceiros Financeiros",
+      description: "Instituições de confiança no mercado",
       color: "green",
     },
     {
       icon: TrendingUp,
       number: "R$ 10M+",
       label: "Volume Disponível",
+      description: "Em linhas de crédito estruturadas",
       color: "green",
     },
     {
       icon: Award,
       number: "100%",
       label: "Conformidade Legal",
-      color: "purple",
+      description: "Operações regulamentadas",
+      color: "blue",
+    },
+  ];
+
+  const differentials = [
+    {
+      icon: Shield,
+      title: "Atendimento Consultivo",
+      description: "Personalizado para cada perfil empresarial",
+    },
+    {
+      icon: Building,
+      title: "Rede Estratégica",
+      description: "Mais de 50 parceiros financeiros e tecnológicos",
+    },
+    {
+      icon: Star,
+      title: "Experiência Comprovada",
+      description: "Operações complexas e resultados efetivos",
+    },
+    {
+      icon: MapPin,
+      title: "Atuação Nacional",
+      description: "Base em São Paulo, alcance em todo Brasil",
     },
   ];
 
@@ -126,11 +172,12 @@ export default function SobrePage() {
         <Box
           py={{ base: 20, md: 32 }}
           bg="gradient-to-br"
-          bgGradient="linear(to-br, green.600, green.800)"
+          bgGradient="linear(to-br, gray.900, green.900)"
           color="white"
           position="relative"
           overflow="hidden"
         >
+          {/* Background Elements */}
           <Box
             position="absolute"
             top="10%"
@@ -152,30 +199,37 @@ export default function SobrePage() {
             zIndex={0}
           />
 
-          <Container maxW="8xl" position="relative" zIndex={1}>
+          <Container maxW="6xl" position="relative" zIndex={1}>
             <VStack gap={8} textAlign="center" maxW="4xl" mx="auto">
               <Badge
-                bg="whiteAlpha.200"
-                color="white"
+                colorPalette="green"
                 fontSize="sm"
                 px={4}
-                py={2}
+                py={3}
                 borderRadius="full"
                 fontWeight="medium"
+                bg="green.600"
+                backdropFilter="blur(10px)"
               >
-                Sobre a Financial Hub
+                <Flex align="center" gap={2}>
+                  <Building size={16} />
+                  <Text color="white">Sobre a Financial Hub</Text>
+                </Flex>
               </Badge>
 
               <Heading
                 fontSize={{ base: "4xl", md: "5xl", lg: "6xl" }}
                 fontWeight="extrabold"
                 lineHeight="1.1"
+                textShadow="2px 2px 4px rgba(0,0,0,0.3)"
               >
-                Especialistas em{" "}
-                <Text as="span" color="green.200">
-                  transformar estratégia
+                <Text as="span" color="green.400">
+                  Especialistas
                 </Text>{" "}
-                em ação
+                em transformar estratégia em{" "}
+                <Text as="span" color="green.400">
+                  ação
+                </Text>
               </Heading>
 
               <Text
@@ -183,19 +237,33 @@ export default function SobrePage() {
                 lineHeight="1.6"
                 maxW="3xl"
                 color="whiteAlpha.900"
+                fontWeight="medium"
+                textShadow="1px 1px 2px rgba(0,0,0,0.5)"
               >
                 Somos uma assessoria financeira especializada em conectar
                 empresas às melhores soluções do mercado — de crédito à
                 tecnologia, de valuation à expansão internacional.
               </Text>
+
+              <HStack gap={4} flexWrap="wrap" justify="center">
+                <Badge variant="outline" colorPalette="green" size="lg" color="white">
+                  +50 Parceiros
+                </Badge>
+                <Badge variant="outline" colorPalette="green" size="lg" color="white">
+                  Atuação Nacional
+                </Badge>
+                <Badge variant="outline" colorPalette="green" size="lg" color="white">
+                  100% Compliance
+                </Badge>
+              </HStack>
             </VStack>
           </Container>
         </Box>
 
         {/* Nossa História */}
-        <Container maxW="8xl" py={{ base: 16, md: 24 }}>
-          <VStack gap={16}>
-            <VStack gap={6} textAlign="center" maxW="4xl">
+        <Container maxW="6xl" py={{ base: 16, md: 24 }}>
+          <Grid templateColumns={{ base: "1fr", lg: "5fr 7fr" }} gap={12} alignItems="center">
+            <VStack align="start" gap={6}>
               <Badge
                 colorPalette="green"
                 fontSize="sm"
@@ -203,20 +271,29 @@ export default function SobrePage() {
                 py={2}
                 borderRadius="full"
                 fontWeight="medium"
+                bg="green.600"
+                variant="solid"
               >
-                Nossa História
+                <Flex align="center" gap={2}>
+                  <Target size={16} />
+                  <Text color="white">Nossa História</Text>
+                </Flex>
               </Badge>
 
               <Heading
                 fontSize={{ base: "3xl", md: "4xl" }}
                 fontWeight="bold"
                 lineHeight="1.2"
+                color="gray.50"
               >
-                Uma jornada de excelência e inovação
+                Uma jornada de{" "}
+                <Text as="span" color="green.600">
+                  excelência e inovação
+                </Text>
               </Heading>
 
               <Text
-                fontSize={{ base: "lg", md: "xl" }}
+                fontSize={{ base: "md", md: "lg" }}
                 color="gray.600"
                 lineHeight="1.6"
               >
@@ -225,10 +302,27 @@ export default function SobrePage() {
                 Nossa missão é simplificar o complexo mundo financeiro e
                 conectar sua empresa às oportunidades certas.
               </Text>
+
+              <VStack align="start" gap={3} w="full">
+                {differentials.map((item, index) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <HStack key={index} gap={3} align="start">
+                      <Box mt={1}>
+                        <CheckCircle size={20} color="var(--acp-colors-green-600)" />
+                      </Box>
+                      <VStack align="start" gap={0}>
+                        <Text fontWeight="bold" color="gray.50">{item.title}</Text>
+                        <Text fontSize="sm" color="gray.300">{item.description}</Text>
+                      </VStack>
+                    </HStack>
+                  );
+                })}
+              </VStack>
             </VStack>
 
             {/* Missão, Visão, Valores */}
-            <SimpleGrid columns={{ base: 1, md: 3 }} gap={8} w="full">
+            <VStack gap={6}>
               {values.map((value, index) => {
                 const IconComponent = value.icon;
                 return (
@@ -238,29 +332,29 @@ export default function SobrePage() {
                     size="lg"
                     bg="white"
                     _hover={{
-                      transform: "translateY(-4px)",
-                      boxShadow: "xl",
+                      transform: "translateY(-2px)",
+                      boxShadow: "lg",
                     }}
                     transition="all 0.3s ease"
-                    height="full"
+                    w="full"
                   >
-                    <Card.Body p={8}>
-                      <VStack align="start" gap={6}>
+                    <Card.Body p={6}>
+                      <HStack gap={4} align="start">
                         <Box
-                          p={4}
+                          p={3}
                           bg={`${value.color}.100`}
-                          borderRadius="xl"
-                          display="inline-block"
+                          borderRadius="lg"
+                          flexShrink={0}
                         >
                           <IconComponent
-                            size={32}
+                            size={24}
                             color={`var(--acp-colors-${value.color}-600)`}
                           />
                         </Box>
 
-                        <VStack align="start" gap={3}>
+                        <VStack align="start" gap={2} flex={1}>
                           <Heading
-                            fontSize="2xl"
+                            fontSize="xl"
                             fontWeight="bold"
                             color="gray.900"
                           >
@@ -269,142 +363,192 @@ export default function SobrePage() {
 
                           <Text
                             color="gray.600"
-                            fontSize="lg"
-                            lineHeight="1.6"
+                            fontSize="md"
+                            lineHeight="1.5"
                             fontStyle={value.title === "Valores" ? "italic" : "normal"}
                             fontWeight={value.title === "Valores" ? "semibold" : "normal"}
                           >
                             {value.description}
                           </Text>
                         </VStack>
-                      </VStack>
+                      </HStack>
                     </Card.Body>
                   </Card.Root>
                 );
               })}
-            </SimpleGrid>
-          </VStack>
+            </VStack>
+          </Grid>
         </Container>
 
-        {/* Estatísticas */}
-        <Box bg="gray.50" py={{ base: 16, md: 24 }}>
-          <Container maxW="8xl">
-            <VStack gap={16}>
-              <VStack gap={6} textAlign="center" maxW="4xl">
-                <Badge
-                  colorPalette="green"
-                  fontSize="sm"
-                  px={4}
-                  py={2}
-                  borderRadius="full"
-                  fontWeight="medium"
-                >
-                  Números que Falam
-                </Badge>
+      
 
-                <Heading
-                  fontSize={{ base: "3xl", md: "4xl" }}
-                  fontWeight="bold"
-                  lineHeight="1.2"
-                >
-                  Resultados que comprovam nossa expertise
-                </Heading>
-              </VStack>
+        {/* Conformidade Regulatória */}
+        <Box py={{ base: 16, md: 24 }}>
+          <Container maxW="6xl">
+            <Card.Root
+              variant="elevated"
+              size="lg"
+              bg="white"
+            >
+              <Card.Body p={12}>
+                <VStack gap={8} textAlign="center">
+                  <HStack gap={3} justify="center">
+                    <Shield size={32} color="var(--acp-colors-green-600)" />
+                    <Heading fontSize="2xl" fontWeight="bold" color="gray.900">
+                      Conformidade Regulatória Total
+                    </Heading>
+                  </HStack>
 
-              <SimpleGrid columns={{ base: 1, md: 3 }} gap={8} w="full">
-                {stats.map((stat, index) => {
-                  const IconComponent = stat.icon;
-                  return (
-                    <Card.Root
-                      key={index}
-                      variant="elevated"
-                      size="lg"
-                      bg="white"
-                      textAlign="center"
-                      _hover={{
-                        transform: "translateY(-4px)",
-                        boxShadow: "xl",
-                      }}
-                      transition="all 0.3s ease"
-                    >
-                      <Card.Body p={8}>
-                        <VStack gap={4}>
-                          <Box
-                            p={4}
-                            bg={`${stat.color}.100`}
-                            borderRadius="full"
-                            display="inline-block"
-                          >
-                            <IconComponent
-                              size={32}
-                              color={`var(--acp-colors-${stat.color}-600)`}
-                            />
-                          </Box>
+                  <Text fontSize="lg" color="gray.700" lineHeight="1.6" maxW="4xl">
+                    A Financial Hub atua exclusivamente como intermediadora estratégica
+                    entre clientes e instituições devidamente habilitadas pelo
+                    Banco Central do Brasil (BACEN), Comissão de Valores
+                    Mobiliários (CVM), SUSEP e demais órgãos reguladores
+                    competentes.
+                  </Text>
 
-                          <Heading
-                            fontSize="4xl"
-                            fontWeight="extrabold"
-                            color={`${stat.color}.600`}
-                          >
-                            {stat.number}
-                          </Heading>
+                  <Text fontSize="md" color="gray.600" maxW="4xl">
+                    Não realizamos captação, intermediação financeira
+                    direta ou gestão de recursos de terceiros. Todas as operações
+                    são formalizadas diretamente entre cliente e instituição autorizada.
+                  </Text>
 
-                          <Text
-                            fontSize="lg"
-                            fontWeight="medium"
-                            color="gray.700"
-                          >
-                            {stat.label}
-                          </Text>
-                        </VStack>
-                      </Card.Body>
-                    </Card.Root>
-                  );
-                })}
-              </SimpleGrid>
-            </VStack>
+                  <Stack
+                    direction={{ base: "column", md: "row" }}
+                    gap={6}
+                    justify="center"
+                  >
+                    <HStack gap={2}>
+                      <CheckCircle size={20} color="var(--acp-colors-green-600)" />
+                      <Text fontSize="sm" color="green.600" fontWeight="medium">
+                        BACEN Compliance
+                      </Text>
+                    </HStack>
+                    <HStack gap={2}>
+                      <CheckCircle size={20} color="var(--acp-colors-green-600)" />
+                      <Text fontSize="sm" color="green.600" fontWeight="medium">
+                        CVM Compliance
+                      </Text>
+                    </HStack>
+                    <HStack gap={2}>
+                      <CheckCircle size={20} color="var(--acp-colors-green-600)" />
+                      <Text fontSize="sm" color="green.600" fontWeight="medium">
+                        SUSEP Compliance
+                      </Text>
+                    </HStack>
+                  </Stack>
+                </VStack>
+              </Card.Body>
+            </Card.Root>
           </Container>
         </Box>
 
-        {/* Conformidade */}
-        <Container maxW="8xl" py={{ base: 16, md: 24 }}>
+        {/* Contato Rápido */}
+        <Container maxW="6xl" py={{ base: 16, md: 24 }}>
           <Card.Root
             variant="elevated"
             size="lg"
-            bg="green.50"
-            border="1px solid"
-            borderColor="green.100"
+            bg="gradient-to-r"
+            bgGradient="linear(to-r, gray.900, green.800)"
+            color="white"
           >
             <Card.Body p={12}>
-              <VStack gap={8} textAlign="center">
-                <HStack gap={3}>
-                  <Award size={32} color="var(--acp-colors-green-600)" />
-                  <Heading fontSize="2xl" fontWeight="bold" color="green.800">
-                    Conformidade Regulatória Total
+              <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={12} alignItems="center">
+                <VStack align="start" gap={6}>
+                  <Badge
+                    bg="whiteAlpha.200"
+                    color="white"
+                    fontSize="sm"
+                    px={4}
+                    py={2}
+                    borderRadius="full"
+                    fontWeight="medium"
+                  >
+                    Entre em Contato
+                  </Badge>
+
+                  <Heading fontSize="3xl" fontWeight="bold">
+                    Vamos conversar sobre seu projeto?
                   </Heading>
-                </HStack>
 
-                <Text fontSize="lg" color="green.700" lineHeight="1.6" maxW="4xl">
-                  A Finhub atua exclusivamente como intermediadora estratégica
-                  entre clientes e instituições devidamente habilitadas pelo
-                  Banco Central do Brasil (BACEN), Comissão de Valores
-                  Mobiliários (CVM), SUSEP e demais órgãos reguladores
-                  competentes. Não realizamos captação, intermediação financeira
-                  direta ou gestão de recursos de terceiros.
-                </Text>
+                  <Text fontSize="lg" color="whiteAlpha.900" lineHeight="1.6">
+                    Nossa equipe está pronta para entender suas necessidades
+                    e apresentar as melhores soluções para sua empresa.
+                  </Text>
 
-                <Stack
-                  direction={{ base: "column", md: "row" }}
-                  gap={4}
-                  fontSize="sm"
-                  color="green.600"
-                  fontWeight="medium"
-                >
-                  <Text>BACEN Compliance</Text>
-                  <Text>CVM Compliance</Text>
-                  <Text>SUSEP Compliance</Text>
-                </Stack>
-              </VStack>
+                  <VStack align="start" gap={3}>
+                    <HStack gap={3}>
+                      <Phone size={20} color="var(--acp-colors-green-400)" />
+                      <Text>(11) 9429-89475</Text>
+                    </HStack>
+                    <HStack gap={3}>
+                      <Mail size={20} color="var(--acp-colors-green-400)" />
+                      <Text>contato@financialhub.com.br</Text>
+                    </HStack>
+                    <HStack gap={3}>
+                      <MapPin size={20} color="var(--acp-colors-green-400)" />
+                      <Text>São Paulo - SP</Text>
+                    </HStack>
+                  </VStack>
+                </VStack>
+
+                <VStack gap={4}>
+                  <NextLink
+                    href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Financial+Hub+Assessoria&type=phone_number&app_absent=0"
+                    passHref
+                    target="_blank"
+                    legacyBehavior
+                  >
+                    <Button
+                      as="a"
+                      size="lg"
+                      colorPalette="green"
+                      variant="solid"
+                      fontWeight="bold"
+                      px={8}
+                      py={6}
+                      fontSize="lg"
+                      bg="green.500"
+                      color="black"
+                      _hover={{
+                        transform: "translateY(-2px)",
+                        boxShadow: "xl",
+                        bg: "green.400",
+                      }}
+                      transition="all 0.3s"
+                      w="full"
+                    >
+                      Falar via WhatsApp
+                      <ArrowRight size={20} />
+                    </Button>
+                  </NextLink>
+
+                  <NextLink href="/contato" passHref legacyBehavior>
+                    <Button
+                      as="a"
+                      size="lg"
+                      variant="outline"
+                      colorPalette="green"
+                      fontWeight="medium"
+                      px={8}
+                      py={6}
+                      fontSize="lg"
+                      borderColor="green.400"
+                      color="white"
+                      bg="transparent"
+                      _hover={{
+                        transform: "translateY(-2px)",
+                        bg: "whiteAlpha.100",
+                        borderColor: "green.300",
+                      }}
+                      transition="all 0.3s"
+                      w="full"
+                    >
+                      Formulário de Contato
+                    </Button>
+                  </NextLink>
+                </VStack>
+              </Grid>
             </Card.Body>
           </Card.Root>
         </Container>

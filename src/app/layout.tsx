@@ -15,7 +15,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#1428BF" />
+        <meta name="theme-color" content="#000" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </head>
       <body>

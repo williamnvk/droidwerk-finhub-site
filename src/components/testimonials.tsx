@@ -68,7 +68,7 @@ export const TestimonialsSection = () => {
 
   return (
     <Box
-      py={{ base: 4, md: 6, lg: 8, xl: 12 }}
+      py={{ base: 4, md: 6, lg: 8, xl: 16 }}
       as="section"
       id="depoimentos"
       aria-labelledby="testimonials-heading"
@@ -142,7 +142,7 @@ export const TestimonialsSection = () => {
               role="article"
               aria-labelledby={`testimonial-${index}-author`}
             >
-              <Box p={8} pt={10}>
+              <Box p={{ base: 4, md: 8 }} pt={{ base: 4, md: 10 }}>
                 <HStack
                   mb={6}
                   gap={2}
