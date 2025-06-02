@@ -1,6 +1,6 @@
 import { Provider } from "@/components/ui/provider";
-import "@fontsource/rubik";
 import "@fontsource/poppins";
+import "../styles/animations.css";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { CookieConsent } from "@/components/cookie-consent";

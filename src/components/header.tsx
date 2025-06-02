@@ -38,7 +38,6 @@ export const Header = () => {
     { name: "Contato", href: "/contato" },
   ];
 
-  const bgColor = scrolled ? "white" : "transparent";
   const shadowValue = scrolled ? "sm" : "none";
 
   return (
@@ -46,42 +45,35 @@ export const Header = () => {
       as="header"
       position="sticky"
       top={0}
+      bg="transparent"
       zIndex={1000}
-      bg={bgColor}
       boxShadow={shadowValue}
       transition="all 0.3s ease"
     >
-      <Container maxW="8xl" as="nav">
+      <Container maxW="6xl" as="nav">
         <Flex justify="space-between" align="center" py={4} gap={8}>
           <NextLink href="/" passHref legacyBehavior>
             <Flex as="a" align="center" gap={2} cursor="pointer">
-              <Box
-                width="32px"
-                height="32px"
-                bg="blue.500"
-                borderRadius="lg"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                color="white"
-                fontWeight="bold"
-                fontSize="lg"
-              >
-                FH
-              </Box>
               <Heading
                 fontSize={{ base: "xl", md: "2xl" }}
                 fontWeight="bold"
-                color="blue.500"
+                color="green.500"
               >
-                Financial Hub
+                Fin
+                <Heading
+                  as="span"
+                  fontSize={{ base: "xl", md: "2xl" }}
+                  fontWeight="bold"
+                  color="white"
+                >
+                  hub
+                </Heading>
               </Heading>
               <Text
                 as="span"
                 fontSize={{ base: "xs", md: "sm" }}
                 fontWeight="medium"
                 display={{ base: "none", md: "inline-block" }}
-                color="gray.600"
               >
                 Assessoria Financeira
               </Text>
@@ -106,7 +98,7 @@ export const Header = () => {
                   as="a"
                   fontSize="md"
                   fontWeight="medium"
-                  _hover={{ color: "blue.500" }}
+                  _hover={{ color: "green.500" }}
                   transition="color 0.2s ease"
                 >
                   {link.name}
@@ -116,15 +108,15 @@ export const Header = () => {
           </HStack>
 
           <HStack gap={4}>
-            <NextLink 
-              href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Financial+Hub+Assessoria+&type=phone_number&app_absent=0" 
-              passHref 
+            <NextLink
+              href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Financial+Hub+Assessoria+&type=phone_number&app_absent=0"
+              passHref
               target="_blank"
               legacyBehavior
             >
               <Button
                 as="a"
-                colorPalette="blue"
+                colorPalette="green"
                 variant="solid"
                 size={{ base: "sm", md: "md" }}
                 fontWeight="medium"
@@ -161,7 +153,7 @@ export const Header = () => {
                   <Box
                     width="32px"
                     height="32px"
-                    bg="blue.500"
+                    bg="green.500"
                     borderRadius="lg"
                     display="flex"
                     alignItems="center"
@@ -175,7 +167,7 @@ export const Header = () => {
                   <Heading
                     fontSize={{ base: "xl", md: "2xl" }}
                     fontWeight="bold"
-                    color="blue.500"
+                    color="green.500"
                   >
                     Financial Hub
                   </Heading>
@@ -196,21 +188,21 @@ export const Header = () => {
                       fontSize="lg"
                       fontWeight="medium"
                       onClick={onClose}
-                      _hover={{ color: "blue.500" }}
+                      _hover={{ color: "green.500" }}
                     >
                       {link.name}
                     </Text>
                   </NextLink>
                 ))}
-                <NextLink 
-                  href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Financial+Hub+Assessoria+&type=phone_number&app_absent=0" 
-                  passHref 
+                <NextLink
+                  href="https://api.whatsapp.com/send/?phone=%2B5511942989475&text=Ol%C3%A1.+Gostaria+de+falar+com+um+especialista+da+Financial+Hub+Assessoria+&type=phone_number&app_absent=0"
+                  passHref
                   target="_blank"
                   legacyBehavior
                 >
                   <Button
                     as="a"
-                    colorPalette="blue"
+                    colorPalette="green"
                     variant="solid"
                     size={{ base: "sm", md: "md" }}
                     fontWeight="medium"

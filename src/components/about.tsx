@@ -17,7 +17,7 @@ export const AboutSection = () => {
       icon: Target,
       title: "Missão",
       description: "Fortalecer empresas com inteligência financeira e estratégica.",
-      color: "blue",
+      color: "green",
     },
     {
       icon: Eye,
@@ -48,7 +48,7 @@ export const AboutSection = () => {
           {/* Header */}
           <VStack gap={6} textAlign="center" maxW="4xl">
             <Badge
-              colorPalette="blue"
+              colorPalette="green"
               fontSize="sm"
               px={4}
               py={2}
@@ -63,7 +63,7 @@ export const AboutSection = () => {
               fontWeight="extrabold"
               lineHeight="1.2"
             >
-              <Text as="span" color="blue.600">
+              <Text as="span" color="green.600">
                 Especialistas
               </Text>{" "}
               em transformar estratégia em ação.
@@ -117,7 +117,7 @@ export const AboutSection = () => {
                       <Box
                         width="8px"
                         height="8px"
-                        bg="blue.500"
+                        bg="green.500"
                         borderRadius="full"
                         mt="8px"
                         flexShrink={0}
@@ -194,21 +194,21 @@ export const AboutSection = () => {
               {/* Compliance notice */}
               <Box
                 p={6}
-                bg="blue.50"
+                bg="green.50"
                 borderRadius="xl"
                 border="1px solid"
-                borderColor="blue.100"
+                borderColor="green.100"
                 w="full"
               >
                 <VStack gap={3} align="start">
                   <HStack gap={2}>
-                    <Award size={20} color="var(--acp-colors-blue-600)" />
-                    <Heading fontSize="md" fontWeight="bold" color="blue.800">
+                    <Award size={20} color="var(--acp-colors-green-600)" />
+                    <Heading fontSize="md" fontWeight="bold" color="green.800">
                       Conformidade Regulatória
                     </Heading>
                   </HStack>
                   
-                  <Text fontSize="sm" color="blue.700" lineHeight="1.5">
+                  <Text fontSize="sm" color="green.700" lineHeight="1.5">
                     Atuamos em total conformidade com as regulamentações do
                     BACEN, CVM e SUSEP, garantindo segurança jurídica em todas
                     as nossas operações.

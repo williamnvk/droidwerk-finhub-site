@@ -61,7 +61,7 @@ export const InfoTip = React.forwardRef<
         variant="ghost"
         aria-label="info"
         size="2xs"
-        colorPalette="blue"
+        colorPalette="green"
       >
         <InfoIcon />
       </IconButton>

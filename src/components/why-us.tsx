@@ -25,7 +25,7 @@ export const WhyUsSection = () => {
       title: "Atendimento consultivo e personalizado",
       description:
         "Cada empresa é única. Desenvolvemos estratégias personalizadas que se encaixam perfeitamente na sua realidade e objetivos específicos.",
-      color: "blue",
+      color: "green",
     },
     {
       icon: Network,
@@ -72,7 +72,7 @@ export const WhyUsSection = () => {
           {/* Header */}
           <VStack gap={6} textAlign="center" maxW="4xl">
             <Badge
-              colorPalette="blue"
+              colorPalette="green"
               fontSize="sm"
               px={4}
               py={2}
@@ -88,7 +88,7 @@ export const WhyUsSection = () => {
               lineHeight="1.2"
             >
               Muito além da assessoria.{" "}
-              <Text as="span" color="blue.600">
+              <Text as="span" color="green.500">
                 Somos especialistas
               </Text>{" "}
               em conexões estratégicas.
@@ -96,8 +96,7 @@ export const WhyUsSection = () => {
             
             <Text
               fontSize={{ base: "lg", md: "xl" }}
-              color="gray.600"
-              lineHeight="1.6"
+              color="fg.muted"
               fontWeight="medium"
             >
               Nosso time alia experiência prática com inteligência de mercado
@@ -117,7 +116,6 @@ export const WhyUsSection = () => {
               <Heading
                 fontSize="2xl"
                 fontWeight="bold"
-                color="gray.900"
                 alignSelf="start"
               >
                 Nossos Diferenciais
@@ -190,10 +188,10 @@ export const WhyUsSection = () => {
               
               <Box
                 p={8}
-                bg="blue.50"
+                bg="green.50"
                 borderRadius="2xl"
                 border="1px solid"
-                borderColor="blue.100"
+                borderColor="green.100"
                 w="full"
               >
                 <VStack gap={6} align="start">
@@ -201,7 +199,7 @@ export const WhyUsSection = () => {
                     <HStack key={index} gap={3} align="start">
                       <CheckCircle
                         size={20}
-                        color="var(--acp-colors-blue-600)"
+                        color="var(--acp-colors-green-600)"
                         style={{ marginTop: "2px", flexShrink: 0 }}
                       />
                       <Text
@@ -227,7 +225,7 @@ export const WhyUsSection = () => {
                   borderColor="gray.200"
                   textAlign="center"
                   _hover={{
-                    borderColor: "blue.200",
+                    borderColor: "green.200",
                     boxShadow: "md",
                   }}
                   transition="all 0.3s ease"
@@ -235,7 +233,7 @@ export const WhyUsSection = () => {
                   <Heading
                     fontSize="3xl"
                     fontWeight="extrabold"
-                    color="blue.600"
+                    color="green.600"
                   >
                     50+
                   </Heading>
@@ -252,7 +250,7 @@ export const WhyUsSection = () => {
                   borderColor="gray.200"
                   textAlign="center"
                   _hover={{
-                    borderColor: "blue.200",
+                    borderColor: "green.200",
                     boxShadow: "md",
                   }}
                   transition="all 0.3s ease"

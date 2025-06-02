@@ -68,8 +68,8 @@ export const ContatoPage = () => {
 
   const bgColor = "bg.panel";
   const borderColor = "border";
-  const headingColor = "blue.500";
-  const iconColor = "blue.300";
+  const headingColor = "green.500";
+  const iconColor = "green.300";
 
   return (
     <Container
@@ -105,7 +105,7 @@ export const ContatoPage = () => {
                 as="a"
                 // @ts-ignore
                 href="mailto:contato@acpersonalidade.com.br"
-                color="blue.400"
+                color="green.400"
               >
                 contato@acpersonalidade.com.br
               </Text>
@@ -267,7 +267,7 @@ export const ContatoPage = () => {
 
               <Button
                 type="submit"
-                colorPalette="blue"
+                colorPalette="green"
                 size="lg"
                 width="full"
                 loading={isSubmitting}

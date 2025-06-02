@@ -16,7 +16,7 @@ import { ArrowRight, Star, Phone } from "lucide-react";
 export const CTASection = () => (
   <Box
     py={24}
-    bg="blue.600"
+    bg="green.600"
     borderRadius={{ md: "xl" }}
     mx={{ md: 8 }}
     position="relative"
@@ -51,7 +51,7 @@ export const CTASection = () => (
             px={4}
             py={2}
             borderRadius="full"
-            color="blue.500"
+            color="green.500"
             fontWeight="bold"
             boxShadow="md"
           >
@@ -98,14 +98,14 @@ export const CTASection = () => (
               size="lg"
               variant="solid"
               bg="white"
-              color="blue.500"
+              color="green.500"
               fontWeight="bold"
               px={8}
               _hover={{
                 transform: "translateY(-2px)",
                 boxShadow: "xl",
                 bg: "white",
-                color: "blue.500",
+                color: "green.500",
               }}
               transition="all 0.3s"
             >
@@ -118,13 +118,13 @@ export const CTASection = () => (
               as="a"
               size="lg"
               variant="ghost"
-              colorPalette="blue"
+              colorPalette="green"
               color="white"
               fontWeight="medium"
               _hover={{
                 transform: "translateY(-2px)",
                 boxShadow: "xl",
-                bg: "blue.500",
+                bg: "green.500",
                 color: "white",
               }}
             >

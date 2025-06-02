@@ -78,7 +78,7 @@ export default function SobrePage() {
       icon: Target,
       title: "Missão",
       description: "Fortalecer empresas com inteligência financeira e estratégica.",
-      color: "blue",
+      color: "green",
     },
     {
       icon: Eye,
@@ -100,7 +100,7 @@ export default function SobrePage() {
       icon: Users,
       number: "50+",
       label: "Parceiros Financeiros",
-      color: "blue",
+      color: "green",
     },
     {
       icon: TrendingUp,
@@ -126,7 +126,7 @@ export default function SobrePage() {
         <Box
           py={{ base: 20, md: 32 }}
           bg="gradient-to-br"
-          bgGradient="linear(to-br, blue.600, blue.800)"
+          bgGradient="linear(to-br, green.600, green.800)"
           color="white"
           position="relative"
           overflow="hidden"
@@ -172,7 +172,7 @@ export default function SobrePage() {
                 lineHeight="1.1"
               >
                 Especialistas em{" "}
-                <Text as="span" color="blue.200">
+                <Text as="span" color="green.200">
                   transformar estratégia
                 </Text>{" "}
                 em ação
@@ -197,7 +197,7 @@ export default function SobrePage() {
           <VStack gap={16}>
             <VStack gap={6} textAlign="center" maxW="4xl">
               <Badge
-                colorPalette="blue"
+                colorPalette="green"
                 fontSize="sm"
                 px={4}
                 py={2}
@@ -292,7 +292,7 @@ export default function SobrePage() {
             <VStack gap={16}>
               <VStack gap={6} textAlign="center" maxW="4xl">
                 <Badge
-                  colorPalette="blue"
+                  colorPalette="green"
                   fontSize="sm"
                   px={4}
                   py={2}
@@ -371,20 +371,20 @@ export default function SobrePage() {
           <Card.Root
             variant="elevated"
             size="lg"
-            bg="blue.50"
+            bg="green.50"
             border="1px solid"
-            borderColor="blue.100"
+            borderColor="green.100"
           >
             <Card.Body p={12}>
               <VStack gap={8} textAlign="center">
                 <HStack gap={3}>
-                  <Award size={32} color="var(--acp-colors-blue-600)" />
-                  <Heading fontSize="2xl" fontWeight="bold" color="blue.800">
+                  <Award size={32} color="var(--acp-colors-green-600)" />
+                  <Heading fontSize="2xl" fontWeight="bold" color="green.800">
                     Conformidade Regulatória Total
                   </Heading>
                 </HStack>
 
-                <Text fontSize="lg" color="blue.700" lineHeight="1.6" maxW="4xl">
+                <Text fontSize="lg" color="green.700" lineHeight="1.6" maxW="4xl">
                   A Finhub atua exclusivamente como intermediadora estratégica
                   entre clientes e instituições devidamente habilitadas pelo
                   Banco Central do Brasil (BACEN), Comissão de Valores
@@ -397,7 +397,7 @@ export default function SobrePage() {
                   direction={{ base: "column", md: "row" }}
                   gap={4}
                   fontSize="sm"
-                  color="blue.600"
+                  color="green.600"
                   fontWeight="medium"
                 >
                   <Text>BACEN Compliance</Text>

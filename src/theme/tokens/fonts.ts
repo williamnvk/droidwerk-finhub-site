@@ -4,7 +4,7 @@ const fallback = `-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Aria
 
 export const fonts = defineTokens.fonts({
   heading: {
-    value: `"Rubik", ${fallback}`,
+    value: `"Poppins", ${fallback}`,
   },
 
   body: {

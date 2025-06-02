@@ -45,8 +45,8 @@ export const TestimonialsSection = () => {
       role: "Diretor Comercial",
       company: "Export & Import Ltda",
       rating: 5,
-      avatarColor: "blue.500",
-      accent: "blue",
+      avatarColor: "green.500",
+      accent: "green",
       impact: "Expansão internacional concluída",
     },
     {
@@ -76,7 +76,7 @@ export const TestimonialsSection = () => {
       <Container maxW="6xl" position="relative" zIndex="1">
         <VStack gap={4} textAlign="center">
           <Badge
-            colorPalette="blue"
+            colorPalette="green"
             fontSize="sm"
             px={3}
             py={1}
@@ -90,7 +90,7 @@ export const TestimonialsSection = () => {
             fontSize={{ base: "3xl", md: "4xl" }}
             fontWeight="bold"
           >
-            <Text as="span" color="blue.500">
+            <Text as="span" color="green.500">
               Quem confia,{" "}
             </Text>
             cresce com a gente

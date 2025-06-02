@@ -72,7 +72,7 @@ export function CookieConsent() {
       <Container maxW="7xl">
         <VStack gap={4} align="stretch">
           <HStack gap={4} align="flex-start">
-            <Box color="blue.500" mt={1}>
+            <Box color="green.500" mt={1}>
               <CookieIcon size={24} />
             </Box>
             <VStack gap={2} align="flex-start">
@@ -86,7 +86,7 @@ export function CookieConsent() {
                 preferências a qualquer momento visitando nossa{" "}
                 <Link
                   href="/politica-de-privacidade"
-                  color="blue.500"
+                  color="green.500"
                   display="inline-flex"
                   alignItems="center"
                   _hover={{ textDecoration: "underline" }}
@@ -109,7 +109,7 @@ export function CookieConsent() {
             </Button>
             <Button
               size="sm"
-              colorPalette="blue"
+              colorPalette="green"
               onClick={handleAccept}
             >
               Aceitar todos

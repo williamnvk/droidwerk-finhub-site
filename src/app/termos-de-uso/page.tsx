@@ -33,8 +33,8 @@ export default function TermosDeUso() {
           <Heading
             as="h1"
             size="2xl"
-            color="blue.600"
-            _dark={{ color: "blue.300" }}
+            color="green.600"
+            _dark={{ color: "green.300" }}
           >
             Termos de Uso
           </Heading>
@@ -51,8 +51,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Aceitação dos Termos
           </Heading>
@@ -66,8 +66,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Descrição do Serviço
           </Heading>
@@ -88,8 +88,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Cadastro e Contas
           </Heading>
@@ -115,8 +115,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Uso Permitido
           </Heading>
@@ -144,8 +144,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Propriedade Intelectual
           </Heading>
@@ -165,8 +165,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Limitação de Responsabilidade
           </Heading>
@@ -187,8 +187,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Pagamentos e Assinaturas
           </Heading>
@@ -216,8 +216,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Modificações dos Termos
           </Heading>
@@ -232,8 +232,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Rescisão
           </Heading>
@@ -247,8 +247,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Lei Aplicável
           </Heading>
@@ -262,8 +262,8 @@ export default function TermosDeUso() {
           <Heading
             as="h2"
             size="lg"
-            color="blue.500"
-            _dark={{ color: "blue.300" }}
+            color="green.500"
+            _dark={{ color: "green.300" }}
           >
             Contato
           </Heading>
@@ -272,7 +272,7 @@ export default function TermosDeUso() {
             contato conosco através do email:
             <Text as="span" fontWeight="bold">
               {" "}
-              <Link href="mailto:contato@acpersonalidade.com" color="blue.500">
+              <Link href="mailto:contato@acpersonalidade.com" color="green.500">
                 contato@acpersonalidade.com
               </Link>
             </Text>{" "}

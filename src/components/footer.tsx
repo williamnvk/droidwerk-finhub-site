@@ -13,7 +13,7 @@ import {
 import NextLink from "next/link";
 
 export const Footer = () => (
-  <Box bg="gray.900" color="white">
+  <Box>
     <Container maxW="8xl" py={{ base: 12, md: 16 }}>
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 4 }}
@@ -45,7 +45,7 @@ export const Footer = () => (
               href="/#solucoes"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Captação de Recursos
             </ChakraLink>
@@ -54,7 +54,7 @@ export const Footer = () => (
               href="/#solucoes"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Valuation e M&A
             </ChakraLink>
@@ -63,7 +63,7 @@ export const Footer = () => (
               href="/#solucoes"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Expansão Internacional
             </ChakraLink>
@@ -72,7 +72,7 @@ export const Footer = () => (
               href="/#solucoes"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Tecnologia & IA
             </ChakraLink>
@@ -90,7 +90,7 @@ export const Footer = () => (
               href="/#quem-somos"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Quem Somos
             </ChakraLink>
@@ -99,7 +99,7 @@ export const Footer = () => (
               href="/#por-que-nos"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Por que nós
             </ChakraLink>
@@ -108,7 +108,7 @@ export const Footer = () => (
               href="/#depoimentos"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Depoimentos
             </ChakraLink>
@@ -117,7 +117,7 @@ export const Footer = () => (
               href="/contato"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               Contato
             </ChakraLink>
@@ -134,7 +134,7 @@ export const Footer = () => (
               href="tel:+5511942989475"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               (11) 94298-9475
             </ChakraLink>
@@ -142,7 +142,7 @@ export const Footer = () => (
               href="mailto:contato@financialhub.com.br"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               contato@financialhub.com.br
             </ChakraLink>
@@ -151,7 +151,7 @@ export const Footer = () => (
               target="_blank"
               fontSize="sm"
               color="gray.300"
-              _hover={{ color: "blue.300" }}
+              _hover={{ color: "green.300" }}
             >
               www.financialhub.com.br
             </ChakraLink>
@@ -181,7 +181,7 @@ export const Footer = () => (
             target="_blank"
             aria-label="Instagram"
             color="gray.400"
-            _hover={{ color: "blue.300" }}
+            _hover={{ color: "green.300" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +198,7 @@ export const Footer = () => (
             target="_blank"
             aria-label="LinkedIn"
             color="gray.400"
-            _hover={{ color: "blue.300" }}
+            _hover={{ color: "green.300" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,7 @@ export const Footer = () => (
             as={NextLink}
             href="/politica-de-privacidade"
             color="gray.400"
-            _hover={{ color: "blue.300" }}
+            _hover={{ color: "green.300" }}
           >
             Política de Privacidade
           </ChakraLink>
@@ -230,7 +230,7 @@ export const Footer = () => (
             as={NextLink}
             href="/termos-de-uso"
             color="gray.400"
-            _hover={{ color: "blue.300" }}
+            _hover={{ color: "green.300" }}
           >
             Termos de Uso
           </ChakraLink>
