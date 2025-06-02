@@ -8,9 +8,9 @@ import {
   Badge,
   HStack,
   SimpleGrid,
-  Avatar
+  Avatar,
 } from "@chakra-ui/react";
-import { CheckIcon } from "lucide-react";
+import { CheckIcon, Users2Icon } from "lucide-react";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
@@ -34,8 +34,8 @@ export const TestimonialsSection = () => {
       role: "CEO",
       company: "TechSolutions Brasil",
       rating: 5,
-      avatarColor: "purple.500",
-      accent: "purple",
+      avatarColor: "blue.500",
+      accent: "blue",
       impact: "Valuation 40% acima do esperado",
     },
     {
@@ -78,11 +78,17 @@ export const TestimonialsSection = () => {
           <Badge
             colorPalette="green"
             fontSize="sm"
-            px={3}
-            py={1}
+            px={4}
+            py={2}
             borderRadius="full"
+            fontWeight="medium"
+            bg="green.600"
+            variant="solid"
           >
-            Histórias de Sucesso
+            <Flex align="center" gap={2}>
+              <Users2Icon size={16} />
+              <Text color="white"> Histórias de Sucesso</Text>
+            </Flex>
           </Badge>
           <Heading
             as="h2"
@@ -136,16 +142,6 @@ export const TestimonialsSection = () => {
               role="article"
               aria-labelledby={`testimonial-${index}-author`}
             >
-              <Box
-                position="absolute"
-                top={0}
-                left={0}
-                right={0}
-                h="8px"
-                bgGradient={`linear(to-r, ${testimonial.accent}.400, ${testimonial.accent}.600)`}
-                aria-hidden="true"
-              />
-
               <Box p={8} pt={10}>
                 <HStack
                   mb={6}
@@ -196,8 +192,6 @@ export const TestimonialsSection = () => {
                       bg={testimonial.avatarColor}
                       color="white"
                       fontWeight="bold"
-                      boxShadow="md"
-                      border="2px solid white"
                       aria-hidden="true"
                     >
                       <Avatar.Fallback>
@@ -209,10 +203,11 @@ export const TestimonialsSection = () => {
                         fontWeight="bold"
                         fontSize="md"
                         id={`testimonial-${index}-author`}
+                        color="gray.900"
                       >
                         {testimonial.name}
                       </Text>
-                      <Text fontSize="sm" color="gray.700">
+                      <Text fontSize="sm" color="gray.500">
                         {testimonial.role}
                       </Text>
                     </VStack>

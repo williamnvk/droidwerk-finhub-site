@@ -5,10 +5,9 @@ import {
   Text,
   SimpleGrid,
   VStack,
-  HStack,
   Badge,
-  Stack,
   Flex,
+  Icon,
 } from "@chakra-ui/react";
 import {
   Users,
@@ -16,269 +15,233 @@ import {
   Award,
   MapPin,
   Settings,
-  CheckCircle,
-  TrendingUp,
+  ShieldQuestionIcon,
 } from "lucide-react";
 
 export const WhyUsSection = () => {
   const differentials = [
     {
       icon: Users,
-      title: "Atendimento consultivo e personalizado",
-      description:
-        "Cada empresa é única. Desenvolvemos estratégias personalizadas que se encaixam perfeitamente na sua realidade e objetivos específicos.",
+      title: "Atendimento Consultivo",
+      description: "Estratégias personalizadas para sua realidade",
       color: "green",
     },
     {
       icon: Network,
-      title: "Rede com +50 parceiros financeiros e tecnológicos",
-      description:
-        "Nossa extensa rede de contatos garante que você tenha acesso às melhores oportunidades e condições do mercado.",
-      color: "green",
+      title: "+50 Parceiros",
+      description: "Acesso às melhores condições do mercado",
+      color: "blue",
     },
     {
       icon: Award,
-      title: "Experiência em operações complexas",
-      description:
-        "Anos de experiência nos permitem estruturar e executar operações complexas com segurança e eficiência comprovadas.",
-      color: "purple",
+      title: "Operações Complexas",
+      description: "Experiência comprovada em grandes transações",
+      color: "red",
     },
     {
       icon: MapPin,
-      title: "Atuação nacional com base em São Paulo",
-      description:
-        "Presença nacional com o dinamismo e conectividade do principal centro financeiro do país.",
-      color: "orange",
+      title: "Atuação Nacional",
+      description: "Base em SP, presença em todo Brasil",
+      color: "green",
     },
     {
       icon: Settings,
-      title: "Soluções integradas de crédito, tecnologia e expansão",
-      description:
-        "Oferecemos um ecossistema completo de soluções que trabalham de forma integrada para maximizar seus resultados.",
-      color: "teal",
+      title: "Soluções Integradas",
+      description: "Crédito, tecnologia e expansão em um só lugar",
+      color: "gray",
     },
   ];
 
-  const highlights = [
-    "Especialistas em conexões estratégicas",
-    "Metodologia própria comprovada",
-    "Inteligência de mercado atualizada",
-    "Conformidade regulatória total",
-    "Transparência em todas as operações",
-  ];
-
   return (
-    <Box py={{ base: 16, md: 24 }} as="section" id="por-que-nos">
+    <Box
+      py={{ base: 12, md: 16, lg: 20 }}
+      as="section"
+      id="por-que-nos"
+      bg="white"
+      rounded="lg"
+      m={{ base: 4, md: 8, lg: 16 }}
+      role="region"
+      aria-labelledby="why-us-heading"
+    >
       <Container maxW="6xl">
-        <VStack gap={16}>
+        <VStack gap={{ base: 8, md: 10, lg: 12 }}>
           {/* Header */}
-          <VStack gap={6} textAlign="center" maxW="4xl">
-           
+          <VStack gap={4} textAlign="center" maxW="3xl">
             <Badge
-            colorPalette="green"
-            fontSize="sm"
-            px={4}
-            py={3}
-            borderRadius="full"
-            fontWeight="medium"
-            bg="green.600"
-            backdropFilter="blur(10px)"
-          >
-            <Flex align="center" gap={2}>
-              <TrendingUp size={16} />
-              <Text color="white"> Por que a Financial Hub?</Text>
-            </Flex>
-          </Badge>
-            
+              colorPalette="green"
+              fontSize="sm"
+              px={4}
+              py={2}
+              borderRadius="full"
+              fontWeight="medium"
+              bg="green.600"
+              variant="solid"
+            >
+              <Flex align="center" gap={2}>
+                <ShieldQuestionIcon size={16} />
+                <Text color="white">Por que a Financial Hub?</Text>
+              </Flex>
+            </Badge>
+
             <Heading
-              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+              id="why-us-heading"
+              fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
               fontWeight="extrabold"
               lineHeight="1.2"
+              color="gray.900"
+              as="h2"
             >
-              Muito além da assessoria.{" "}
+              Especialistas em{" "}
               <Text as="span" color="green.500">
-                Somos especialistas
-              </Text>{" "}
-              em conexões estratégicas.
+                conexões estratégicas
+              </Text>
             </Heading>
-            
+
             <Text
-              fontSize={{ base: "lg", md: "xl" }}
-              color="fg.muted"
+              fontSize={{ base: "md", md: "lg" }}
+              color="gray.600"
               fontWeight="medium"
             >
-              Nosso time alia experiência prática com inteligência de mercado
-              para entregar as melhores oportunidades financeiras para sua
-              empresa.
+              Experiência + inteligência de mercado = melhores oportunidades
+              financeiras
             </Text>
           </VStack>
 
-          <Stack
-            direction={{ base: "column", lg: "row" }}
-            gap={16}
-            align="start"
+          {/* Differentials Grid - All cards with same size */}
+          <SimpleGrid
+            columns={{ base: 1, sm: 2, lg: 3, xl: 5 }}
+            gap={{ base: 4, md: 6 }}
             w="full"
+            role="list"
+            aria-label="Nossos diferenciais"
           >
-            {/* Left side - Differentials */}
-            <VStack gap={8} flex={1}>
-              <Heading
-                fontSize="2xl"
-                fontWeight="bold"
-                alignSelf="start"
-              >
-                Nossos Diferenciais
-              </Heading>
-              
-              <VStack gap={6} w="full">
-                {differentials.map((differential, index) => {
-                  const IconComponent = differential.icon;
-                  return (
-                    <HStack
-                      key={index}
-                      gap={4}
-                      align="start"
-                      p={6}
-                      bg="gray.50"
-                      borderRadius="xl"
-                      w="full"
-                      _hover={{
-                        bg: "gray.100",
-                        transform: "translateX(8px)",
-                      }}
-                      transition="all 0.3s ease"
+            {differentials.map((differential, index) => {
+              const IconComponent = differential.icon;
+              return (
+                <VStack
+                  key={index}
+                  gap={4}
+                  p={{ base: 4, md: 6 }}
+                  borderRadius="xl"
+                  border="1px solid"
+                  borderColor="gray.200"
+                  textAlign="center"
+                  role="listitem"
+                  tabIndex={0}
+                  _focus={{
+                    outline: "2px solid",
+                    outlineColor: `${differential.color}.500`,
+                    outlineOffset: "2px",
+                  }}
+                  minH={{ base: "auto", md: "200px" }}
+                  justifyContent="flex-start"
+                >
+                  <Box
+                    p={3}
+                    bg={`${differential.color}.100`}
+                    borderRadius="full"
+                    w={12}
+                    h={12}
+                    border="1px solid"
+                    borderColor={`${differential.color}.200`}
+                    aria-hidden="true"
+                  >
+                    <Icon color={`${differential.color}.700`}>
+                      <IconComponent size={24} />
+                    </Icon>
+                  </Box>
+
+                  <VStack gap={2}>
+                    <Heading
+                      fontSize={{ base: "md", md: "lg" }}
+                      fontWeight="bold"
+                      color="gray.900"
+                      lineHeight="1.3"
+                      as="h3"
                     >
-                      <Box
-                        p={3}
-                        bg={`${differential.color}.100`}
-                        borderRadius="lg"
-                        flexShrink={0}
-                      >
-                        <IconComponent
-                          size={24}
-                          color={`var(--acp-colors-${differential.color}-600)`}
-                        />
-                      </Box>
-                      
-                      <VStack align="start" gap={2} flex={1}>
-                        <Heading
-                          fontSize="lg"
-                          fontWeight="bold"
-                          color="gray.900"
-                          lineHeight="1.3"
-                        >
-                          {differential.title}
-                        </Heading>
-                        
-                        <Text
-                          color="gray.600"
-                          fontSize="md"
-                          lineHeight="1.5"
-                        >
-                          {differential.description}
-                        </Text>
-                      </VStack>
-                    </HStack>
-                  );
-                })}
-              </VStack>
-            </VStack>
+                      {differential.title}
+                    </Heading>
 
-            {/* Right side - Highlights */}
-            <VStack gap={8} flex={1}>
-              <Heading
-                fontSize="2xl"
-                fontWeight="bold"
-                color="gray.900"
-                alignSelf="start"
-              >
-                Nossa Expertise
-              </Heading>
-              
-              <Box
-                p={8}
-                bg="green.50"
-                borderRadius="2xl"
-                border="1px solid"
-                borderColor="green.100"
-                w="full"
-              >
-                <VStack gap={6} align="start">
-                  {highlights.map((highlight, index) => (
-                    <HStack key={index} gap={3} align="start">
-                      <CheckCircle
-                        size={20}
-                        color="var(--acp-colors-green-600)"
-                        style={{ marginTop: "2px", flexShrink: 0 }}
-                      />
-                      <Text
-                        fontWeight="medium"
-                        color="gray.700"
-                        fontSize="md"
-                        lineHeight="1.5"
-                      >
-                        {highlight}
-                      </Text>
-                    </HStack>
-                  ))}
+                    <Text
+                      color="gray.600"
+                      fontSize={{ base: "xs", md: "sm" }}
+                      lineHeight="1.4"
+                    >
+                      {differential.description}
+                    </Text>
+                  </VStack>
                 </VStack>
-              </Box>
+              );
+            })}
+          </SimpleGrid>
 
-              {/* Stats */}
-              <SimpleGrid columns={2} gap={4} w="full">
-                <Box
-                  p={6}
-                  bg="white"
-                  borderRadius="xl"
-                  border="1px solid"
-                  borderColor="gray.200"
-                  textAlign="center"
-                  _hover={{
-                    borderColor: "green.200",
-                    boxShadow: "md",
-                  }}
-                  transition="all 0.3s ease"
-                >
-                  <Heading
-                    fontSize="3xl"
-                    fontWeight="extrabold"
-                    color="green.600"
-                  >
-                    50+
-                  </Heading>
-                  <Text fontSize="sm" color="gray.600" fontWeight="medium">
-                    Parceiros Financeiros
-                  </Text>
-                </Box>
-                
-                <Box
-                  p={6}
-                  bg="white"
-                  borderRadius="xl"
-                  border="1px solid"
-                  borderColor="gray.200"
-                  textAlign="center"
-                  _hover={{
-                    borderColor: "green.200",
-                    boxShadow: "md",
-                  }}
-                  transition="all 0.3s ease"
-                >
-                  <Heading
-                    fontSize="3xl"
-                    fontWeight="extrabold"
-                    color="green.600"
-                  >
-                    R$ 10M+
-                  </Heading>
-                  <Text fontSize="sm" color="gray.600" fontWeight="medium">
-                    Volume Disponível
-                  </Text>
-                </Box>
-              </SimpleGrid>
+          {/* Stats */}
+          <SimpleGrid
+            columns={{ base: 2, md: 4 }}
+            gap={{ base: 4, md: 6 }}
+            w="full"
+            maxW="4xl"
+            role="list"
+            aria-label="Estatísticas da empresa"
+          >
+            <VStack gap={1} textAlign="center" role="listitem">
+              <Heading
+                fontSize={{ base: "xl", md: "2xl" }}
+                fontWeight="extrabold"
+                color="green.600"
+                as="h4"
+              >
+                R$ 500K
+              </Heading>
+              <Text fontSize={{ base: "xs", md: "sm" }} color="gray.600">
+                Valor Mínimo
+              </Text>
             </VStack>
-          </Stack>
+
+            <VStack gap={1} textAlign="center" role="listitem">
+              <Heading
+                fontSize={{ base: "xl", md: "2xl" }}
+                fontWeight="extrabold"
+                color="green.600"
+                as="h4"
+              >
+                35%
+              </Heading>
+              <Text fontSize={{ base: "xs", md: "sm" }} color="gray.600">
+                Economia Energia
+              </Text>
+            </VStack>
+
+            <VStack gap={1} textAlign="center" role="listitem">
+              <Heading
+                fontSize={{ base: "xl", md: "2xl" }}
+                fontWeight="extrabold"
+                color="green.600"
+                as="h4"
+              >
+                8+
+              </Heading>
+              <Text fontSize={{ base: "xs", md: "sm" }} color="gray.600">
+                Tipos de Soluções
+              </Text>
+            </VStack>
+
+            <VStack gap={1} textAlign="center" role="listitem">
+              <Heading
+                fontSize={{ base: "xl", md: "2xl" }}
+                fontWeight="extrabold"
+                color="green.600"
+                as="h4"
+              >
+                1ª
+              </Heading>
+              <Text fontSize={{ base: "xs", md: "sm" }} color="gray.600">
+                Consulta Gratuita
+              </Text>
+            </VStack>
+          </SimpleGrid>
         </VStack>
       </Container>
     </Box>
   );
-}; 
+};
