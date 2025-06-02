@@ -38,16 +38,15 @@ export const Header = () => {
     { name: "Contato", href: "/contato" },
   ];
 
-  const shadowValue = scrolled ? "sm" : "none";
+  const bgColor = scrolled ? "blackAlpha.800" : "transparent";
 
   return (
     <Box
       as="header"
       position="sticky"
       top={0}
-      bg="transparent"
+      bg={bgColor}
       zIndex={1000}
-      boxShadow={shadowValue}
       transition="all 0.3s ease"
     >
       <Container maxW="6xl" as="nav">

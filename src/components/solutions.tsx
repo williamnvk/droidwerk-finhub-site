@@ -20,491 +20,137 @@ import {
   CreditCard,
   Globe,
   Shield,
-  Bot,
   ArrowRight,
   Target,
-  Rocket,
-  TrendingDown,
-  Lightbulb,
-  Star,
-  Sparkles,
   Banknote,
   Brain,
 } from "lucide-react";
 
 export const SolutionsSection = () => {
   return (
-    <Box
-      py={{ base: 20, md: 32 }}
-      as="section"
-      id="solucoes"
-      position="relative"
-      overflow="hidden"
-    >
-      {/* Enhanced Background Pattern */}
-      <Box
-        position="absolute"
-        top="0"
-        left="0"
-        right="0"
-        bottom="0"
-        bgGradient="radial(circle at 20% 30%, green.100 0%, transparent 60%), radial(circle at 80% 70%, green.100 0%, transparent 60%), radial(circle at 60% 20%, green.50 0%, transparent 50%)"
-        opacity="0.6"
-        pointerEvents="none"
-      />
-
-      {/* Floating Elements */}
-      <Box
-        position="absolute"
-        top="10%"
-        left="5%"
-        w="60px"
-        h="60px"
-        bg="green.200"
-        borderRadius="full"
-        opacity="0.1"
-        animation="float 6s ease-in-out infinite"
-        pointerEvents="none"
-      />
-      <Box
-        position="absolute"
-        top="60%"
-        right="8%"
-        w="40px"
-        h="40px"
-        bg="green.300"
-        borderRadius="full"
-        opacity="0.15"
-        animation="float 4s ease-in-out infinite reverse"
-        pointerEvents="none"
-      />
-
-      <Container maxW="8xl" position="relative">
-        <VStack gap={20}>
-          {/* Enhanced Header */}
-          <VStack gap={8} textAlign="center" maxW="5xl">
+    <Box py={{ base: 16, md: 24 }} as="section" id="solucoes">
+      <Container maxW="6xl">
+        <VStack gap={16}>
+          {/* Header Section */}
+          <VStack gap={6} textAlign="center" maxW="4xl">
             <Badge
-              colorPalette="green"
-              fontSize="md"
-              px={8}
-              py={4}
+              colorPalette="gray"
+              fontSize="sm"
+              px={4}
+              py={3}
               borderRadius="full"
-              fontWeight="bold"
-              bg="green.100"
-              color="green.800"
-              border="2px solid"
-              borderColor="green.200"
-              _hover={{
-                transform: "scale(1.05)",
-                boxShadow: "lg",
-              }}
-              transition="all 0.3s ease"
+              fontWeight="medium"
+              bg="gray.800"
+              backdropFilter="blur(10px)"
             >
-              <HStack gap={2}>
-                <Lightbulb size={20} />
-                <Text>Nossas Soluções</Text>
-              </HStack>
+              <Flex align="center" gap={2}>
+                <TrendingUp size={16} />
+                <Text color="white">Nossas Soluções</Text>
+              </Flex>
             </Badge>
 
             <Heading
-              fontSize={{ base: "4xl", md: "5xl", lg: "6xl" }}
-              fontWeight="black"
-              lineHeight="1.1"
-              letterSpacing="-0.02em"
-              textAlign="center"
+              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+              fontWeight="bold"
+              lineHeight="1.2"
             >
-              O que sua empresa{" "}
-              <Text
-                as="span"
-                bgImage="linear-gradient(45deg, {colors.green.500}, {colors.green.400}, {colors.green.500})"
-                bgClip="text"
-                position="relative"
-                _after={{
-                  content: '""',
-                  position: "absolute",
-                  bottom: "-4px",
-                  left: "0",
-                  right: "0",
-                  height: "4px",
-                  bgImage:
-                    "linear-gradient(to-r, {colors.green.400}, {colors.green.400})",
-                  borderRadius: "full",
-                }}
-              >
-                precisa está aqui
+              Soluções sob medida para{" "}
+              <Text as="span" color="green.600" _dark={{ color: "green.400" }}>
+                sua realidade empresarial
               </Text>
             </Heading>
 
             <Text
-              fontSize={{ base: "xl", md: "xl" }}
+              fontSize={{ base: "lg", md: "xl" }}
               color="fg.muted"
               maxW="3xl"
-              lineHeight="1.7"
+              lineHeight="1.6"
             >
-              Transformamos desafios empresariais em oportunidades de
-              crescimento com soluções financeiras completas e inteligentes.
+              Do básico ao sofisticado, oferecemos soluções completas que
+              aceleram o crescimento da sua empresa com estratégia, agilidade e
+              resultados comprovados.
             </Text>
           </VStack>
 
-          {/* Enhanced Bento Grid */}
+          {/* Grid Solutions */}
           <Grid
             templateColumns={{
               base: "1fr",
               md: "repeat(12, 1fr)",
             }}
-            templateRows={{
-              base: "auto",
-              md: "repeat(6, minmax(220px, auto))",
-            }}
-            gap={8}
+            gap={6}
             w="full"
           >
-            {/* ENHANCED Captação de Recursos - HERO CARD */}
-            <GridItem colSpan={{ base: 1, md: 7 }} rowSpan={{ base: 1, md: 3 }}>
-              <Card.Root
-                size="lg"
-                height="full"
-                position="relative"
-                overflow="hidden"
-                bg="bg.panel"
-                border="none"
-                _hover={{
-                  transform: "translateY(-8px)",
-                  boxShadow: "0 25px 50px -12px rgba(34, 197, 94, 0.4)",
-                }}
-                transition="all 0.5s cubic-bezier(0.4, 0, 0.2, 1)"
-                boxShadow="0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
-              >
-                {/* Animated Background */}
-                <Box
-                  position="absolute"
-                  top="0"
-                  left="0"
-                  right="0"
-                  bottom="0"
-                  bgImage="linear-gradient(135deg, {colors.green.500} 0%, {colors.green.600} 50%, {colors.emerald.600} 100%)"
-                  opacity="1"
-                />
-
-                <Card.Body p={12} position="relative" height="full">
-                  <VStack align="start" gap={8} height="full">
-                    {/* Header with Enhanced Badge */}
-                    <HStack gap={6} wrap="wrap">
+            {/* Captação de Recursos - Principal */}
+            <GridItem colSpan={{ base: 1, md: 8 }}>
+              <Card.Root size="lg" height="full" bg="white">
+                <Card.Body p={8}>
+                  <VStack align="start" gap={6} height="full">
+                    <HStack gap={4}>
                       <Box
-                        p={5}
-                        bg="bg.panel"
-                        borderRadius="full"
-                        boxShadow="xl"
-                        _hover={{
-                          transform: "scale(1.1) rotate(5deg)",
-                        }}
-                        transition="all 0.3s ease"
+                        p={4}
+                        bg="green.50"
+                        _dark={{ bg: "green.900" }}
+                        borderRadius="lg"
                       >
                         <DollarSign
-                          size={48}
+                          size={32}
                           color="var(--acp-colors-green-600)"
                         />
                       </Box>
-                      <HStack gap={2} align="start">
-                        <Badge colorPalette="green" variant="solid">
-                          <HStack gap={1}>
-                            <Star size={14} fill="currentColor" />
-                            <Text>DESTAQUE</Text>
-                          </HStack>
-                        </Badge>
-                        <Badge>💰 +50 instituições parceiras</Badge>
-                      </HStack>
-                    </HStack>
-
-                    <VStack align="start" gap={6} flex={1}>
-                      <Heading
-                        fontSize={{ base: "3xl", md: "5xl", lg: "6xl" }}
-                        fontWeight="black"
-                        lineHeight="0.9"
-                        letterSpacing="-0.02em"
-                      >
-                        Captação de
-                        <br />
-                        <Text
-                          textShadow="0 0 20px rgba(255,255,255,0.5)"
-                          position="relative"
-                        >
-                          Recursos
-                          <Sparkles
-                            size={32}
-                            style={{
-                              position: "absolute",
-                              top: "-10px",
-                              right: "-40px",
-                              animation: "pulse 2s ease-in-out infinite",
-                            }}
-                          />
-                        </Text>
-                      </Heading>
-
-                      <Text
-                        fontSize={{ base: "lg", md: "xl" }}
-                        lineHeight="1.6"
-                        opacity="0.95"
-                        fontWeight="medium"
-                        maxW="500px"
-                      >
-                        Conectamos sua empresa a{" "}
-                        <Text
-                          as="strong"
-                          textDecoration="underline"
-                          textDecorationColor="blackAlpha.600"
-                        >
-                          mais de 50 instituições financeiras
-                        </Text>{" "}
-                        — bancos, fintechs, fundos e agências de fomento.
-                      </Text>
-
-                      {/* Enhanced Value Proposition */}
-                      <Box
-                        bg="blackAlpha.200"
-                        backdropFilter="blur(10px)"
-                        border="1px solid"
-                        borderColor="blackAlpha.300"
-                        color="bg.panel"
-                        p={6}
-                        borderRadius="2xl"
-                        fontWeight="bold"
-                        fontSize={{ base: "lg", md: "xl" }}
-                        boxShadow="xl"
-                        position="relative"
-                        _hover={{
-                          bg: "blackAlpha.300",
-                          transform: "scale(1.02)",
-                        }}
-                        transition="all 0.3s ease"
-                      >
-                        <HStack gap={3}>
-                          <Banknote size={24} />
-                          <Text>
-                            De R$ 500 mil a R$ 10 milhões+ com as melhores taxas
-                          </Text>
-                        </HStack>
-                      </Box>
-                    </VStack>
-
-                    <Button
-                      bg="bg.panel"
-                      color="green.600"
-                      size="xl"
-                      _hover={{
-                        bg: "green.50",
-                        transform: "scale(1.05)",
-                        boxShadow: "xl",
-                      }}
-                      fontWeight="bold"
-                      borderRadius="xl"
-                      px={10}
-                      py={6}
-                      fontSize="lg"
-                      transition="all 0.3s ease"
-                      boxShadow="lg"
-                    >
-                      <HStack gap={3}>
-                        <Text>Solicitar Avaliação</Text>
-                        <ArrowRight size={20} />
-                      </HStack>
-                    </Button>
-                  </VStack>
-                </Card.Body>
-              </Card.Root>
-            </GridItem>
-
-            {/* ENHANCED Tecnologia & IA - SECOND HERO CARD */}
-            <GridItem colSpan={{ base: 1, md: 5 }} rowSpan={{ base: 1, md: 3 }}>
-              <Card.Root
-                size="lg"
-                height="full"
-                position="relative"
-                overflow="hidden"
-                bg="bg.panel"
-                border="none"
-                _hover={{
-                  transform: "translateY(-8px)",
-                  boxShadow: "0 25px 50px -12px rgba(59, 130, 246, 0.4)",
-                }}
-                transition="all 0.5s cubic-bezier(0.4, 0, 0.2, 1)"
-                boxShadow="0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
-              >
-                {/* Animated Tech Background */}
-                <Box
-                  position="absolute"
-                  top="0"
-                  left="0"
-                  right="0"
-                  bottom="0"
-                  bgGradient="linear(135deg, green.500 0%, green.600 30%, green.600 100%)"
-                />
-
-                {/* Tech Pattern Overlay */}
-                <Box
-                  position="absolute"
-                  top="0"
-                  left="0"
-                  right="0"
-                  bottom="0"
-                  opacity="0.1"
-                  bgImage="radial-gradient(circle at 25% 25%, bg.panel 2px, transparent 2px), radial-gradient(circle at 75% 75%, bg.panel 2px, transparent 2px)"
-                  bgSize="30px 30px"
-                  animation="float 8s ease-in-out infinite"
-                />
-
-                {/* Floating Tech Elements */}
-                <Box
-                  position="absolute"
-                  top="30px"
-                  right="20px"
-                  w="80px"
-                  h="80px"
-                  bg="blackAlpha.200"
-                  borderRadius="2xl"
-                  animation="pulse 3s ease-in-out infinite"
-                />
-
-                <Card.Body
-                  p={8}
-                  position="relative"
-                  height="full"
-                  color="bg.panel"
-                >
-                  <VStack align="start" gap={6} height="full">
-                    <HStack gap={4} wrap="wrap">
-                      <Box
-                        p={4}
-                        bg="bg.panel"
-                        borderRadius="xl"
-                        boxShadow="xl"
-                        _hover={{
-                          transform: "scale(1.1) rotate(-5deg)",
-                        }}
-                        transition="all 0.3s ease"
-                      >
-                        <Brain size={28} color="var(--acp-colors-green-600)" />
-                      </Box>
-                      <VStack gap={2} align="start">
+                      <VStack align="start" gap={1}>
                         <Badge
-                          bg="bg.panel"
-                          color="green.700"
-                          fontSize="sm"
-                          px={4}
-                          py={2}
-                          borderRadius="full"
-                          fontWeight="bold"
-                        >
-                          <HStack gap={1}>
-                            <Sparkles size={14} fill="currentColor" />
-                            <Text>INOVAÇÃO</Text>
-                          </HStack>
-                        </Badge>
-                        <Badge
-                          bg="blackAlpha.300"
-                          color="bg.panel"
+                          colorPalette="green"
+                          variant="subtle"
                           fontSize="xs"
                           px={3}
                           py={1}
-                          borderRadius="full"
                         >
-                          🤖 IA + Automação
+                          DESTAQUE
                         </Badge>
+                        <Text fontSize="sm" color="fg.muted">
+                          +50 instituições parceiras
+                        </Text>
                       </VStack>
                     </HStack>
 
-                    <VStack align="start" gap={5} flex={1}>
+                    <VStack align="start" gap={4} flex={1}>
                       <Heading
-                        fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
-                        fontWeight="black"
-                        lineHeight="1.1"
-                        letterSpacing="-0.02em"
+                        fontSize={{ base: "2xl", md: "3xl" }}
+                        fontWeight="bold"
+                        color="gray.900"
                       >
-                        Tecnologia
-                        <br />
-                        <Text
-                          bgGradient="linear(to-r, bg.panel, green.200)"
-                          bgClip="text"
-                          textShadow="0 0 20px rgba(255,255,255,0.3)"
-                        >
-                          & IA
-                        </Text>
+                        Captação de Recursos
                       </Heading>
 
                       <Text
                         fontSize={{ base: "md", md: "lg" }}
                         lineHeight="1.6"
-                        opacity="0.95"
+                        color="fg.muted"
                       >
-                        Digitalize a gestão financeira com{" "}
-                        <Text
-                          as="strong"
-                          textDecoration="underline"
-                          textDecorationColor="blackAlpha.500"
-                        >
-                          automações e inteligência artificial
-                        </Text>{" "}
-                        para decisões baseadas em dados.
+                        Conectamos sua empresa a mais de 50 instituições
+                        financeiras — bancos, fintechs, fundos e agências de
+                        fomento para viabilizar seu crescimento.
                       </Text>
 
-                      <Flex gap={3} wrap="wrap">
-                        <Box
-                          bg="blackAlpha.200"
-                          backdropFilter="blur(10px)"
-                          border="1px solid"
-                          borderColor="blackAlpha.300"
-                          p={4}
-                          borderRadius="xl"
-                          fontSize="sm"
-                          fontWeight="bold"
-                          _hover={{
-                            bg: "blackAlpha.300",
-                            transform: "scale(1.05)",
-                          }}
-                          transition="all 0.3s ease"
-                        >
-                          ⚡ Automação Financeira
-                        </Box>
-                        <Box
-                          bg="blackAlpha.200"
-                          backdropFilter="blur(10px)"
-                          border="1px solid"
-                          borderColor="blackAlpha.300"
-                          p={4}
-                          borderRadius="xl"
-                          fontSize="sm"
-                          fontWeight="bold"
-                          _hover={{
-                            bg: "blackAlpha.300",
-                            transform: "scale(1.05)",
-                          }}
-                          transition="all 0.3s ease"
-                        >
-                          📊 Dashboard Inteligente
-                        </Box>
-                      </Flex>
+                      <Text fontSize="sm" color="fg.muted">
+                        De R$ 500 mil a R$ 10 milhões (ou +) com as melhores
+                        taxas
+                      </Text>
                     </VStack>
 
                     <Button
-                      bg="bg.panel"
-                      color="green.600"
+                      colorPalette="green"
                       size="lg"
                       _hover={{
-                        bg: "green.50",
-                        transform: "scale(1.05)",
-                        boxShadow: "xl",
+                        transform: "translateY(-2px)",
+                        boxShadow: "md",
                       }}
-                      fontWeight="bold"
-                      borderRadius="xl"
-                      px={8}
-                      py={5}
-                      transition="all 0.3s ease"
-                      boxShadow="lg"
+                      transition="all 0.2s ease"
                     >
                       <HStack gap={2}>
-                        <Text>Conhecer Soluções</Text>
-                        <Rocket size={18} />
+                        <Text>Solicitar Avaliação</Text>
+                        <ArrowRight size={18} />
                       </HStack>
                     </Button>
                   </VStack>
@@ -512,249 +158,255 @@ export const SolutionsSection = () => {
               </Card.Root>
             </GridItem>
 
-            {/* Enhanced Secondary Cards */}
-            <GridItem colSpan={{ base: 1, md: 4 }} rowSpan={{ base: 1, md: 2 }}>
+            {/* Tecnologia & IA */}
+            <GridItem colSpan={{ base: 1, md: 4 }}>
               <Card.Root
                 size="lg"
-                bg="bg.panel"
                 height="full"
-                border="1px solid"
-                borderColor="green.100"
                 _hover={{
-                  transform: "translateY(-4px)",
-                  boxShadow: "0 20px 25px -5px rgba(168, 85, 247, 0.15)",
-                  borderColor: "green.200",
-                  bg: "green.25",
+                  borderColor: "gray.300",
+                  boxShadow: "md",
                 }}
-                transition="all 0.4s ease"
-                boxShadow="0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+                transition="all 0.3s ease"
               >
-                <Card.Body p={8}>
-                  <VStack align="start" gap={6} height="full">
+                <Card.Body p={6}>
+                  <VStack align="start" gap={4} height="full">
+                    <Box p={3} bg="green.50" borderRadius="lg">
+                      <Brain size={24} color="var(--acp-colors-gray-600)" />
+                    </Box>
+
+                    <VStack align="start" gap={3} flex={1}>
+                      <Heading fontSize="2xl" fontWeight="bold">
+                        Tecnologia & IA
+                      </Heading>
+
+                      <Text fontSize="lg" lineHeight="1.5" color="fg.muted">
+                        Digitalize a gestão financeira com automações e
+                        inteligência artificial para decisões baseadas em dados.
+                      </Text>
+                    </VStack>
+
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      colorPalette="gray"
+                      w="full"
+                    >
+                      Conhecer Soluções
+                    </Button>
+                  </VStack>
+                </Card.Body>
+              </Card.Root>
+            </GridItem>
+
+            {/* Valuation & M&A */}
+            <GridItem colSpan={{ base: 1, md: 4 }}>
+              <Card.Root
+                size="lg"
+                bg="white"
+                height="full"
+                borderWidth="1px solid"
+                _dark={{
+                  bg: "gray.800",
+                }}
+                _hover={{
+                  borderColor: "gray.300",
+                  boxShadow: "md",
+                }}
+                transition="all 0.3s ease"
+              >
+                <Card.Body p={6}>
+                  <VStack align="start" gap={4} height="full">
                     <Box
-                      p={4}
-                      bg="green.100"
-                      borderRadius="xl"
-                      _hover={{
-                        bg: "green.200",
-                        transform: "scale(1.1)",
-                      }}
-                      transition="all 0.3s ease"
+                      p={3}
+                      bg="green.50"
+                      _dark={{ bg: "green.900" }}
+                      borderRadius="lg"
                     >
                       <TrendingUp
-                        size={28}
+                        size={24}
                         color="var(--acp-colors-green-600)"
                       />
                     </Box>
 
-                    <VStack align="start" gap={4} flex={1}>
+                    <VStack align="start" gap={3} flex={1}>
                       <Heading
-                        fontSize="2xl"
+                        fontSize="xl"
                         fontWeight="bold"
+                        color="gray.900"
+                        _dark={{ color: "white" }}
                       >
                         Valuation & M&A
                       </Heading>
 
-                      <Text color="fg.muted" fontSize="md" lineHeight="1.6">
-                        Descubra o valor real da sua empresa com{" "}
-                        <Text as="strong" color="green.600">
-                          metodologias internacionais
-                        </Text>
-                        . Ideal para venda, fusão ou entrada de sócios
-                        estratégicos.
-                      </Text>
-
-                      <Badge
-                        colorPalette="green"
-                        variant="subtle"
+                      <Text
                         fontSize="sm"
-                        px={4}
-                        py={2}
-                        borderRadius="full"
-                        fontWeight="bold"
+                        color="fg.muted"
+                        _dark={{ color: "gray.300" }}
+                        lineHeight="1.5"
                       >
-                        📊 Avaliação profissional
-                      </Badge>
+                        Descubra o valor real da sua empresa com metodologias
+                        internacionais. Ideal para venda, fusão ou entrada de
+                        sócios.
+                      </Text>
                     </VStack>
                   </VStack>
                 </Card.Body>
               </Card.Root>
             </GridItem>
 
-            {/* Enhanced Crédito para Construção */}
-            <GridItem colSpan={{ base: 1, md: 4 }} rowSpan={{ base: 1, md: 2 }}>
+            {/* Crédito para Construção */}
+            <GridItem colSpan={{ base: 1, md: 4 }}>
               <Card.Root
                 size="lg"
-                bg="bg.panel"
+                bg="white"
                 height="full"
                 border="1px solid"
-                borderColor="orange.100"
-                _hover={{
-                  transform: "translateY(-4px)",
-                  boxShadow: "0 20px 25px -5px rgba(251, 146, 60, 0.15)",
-                  borderColor: "orange.200",
-                  bg: "orange.25",
+                borderColor="gray.200"
+                _dark={{
+                  bg: "gray.800",
+                  borderColor: "gray.700",
                 }}
-                transition="all 0.4s ease"
-                boxShadow="0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+                _hover={{
+                  borderColor: "gray.300",
+                  boxShadow: "md",
+                }}
+                transition="all 0.3s ease"
               >
-                <Card.Body p={8}>
-                  <VStack align="start" gap={6} height="full">
+                <Card.Body p={6}>
+                  <VStack align="start" gap={4} height="full">
                     <Box
-                      p={4}
-                      bg="orange.100"
-                      borderRadius="xl"
-                      _hover={{
-                        bg: "orange.200",
-                        transform: "scale(1.1)",
-                      }}
-                      transition="all 0.3s ease"
+                      p={3}
+                      bg="orange.50"
+                      _dark={{ bg: "orange.900" }}
+                      borderRadius="lg"
                     >
                       <Building
-                        size={28}
+                        size={24}
                         color="var(--acp-colors-orange-600)"
                       />
                     </Box>
 
-                    <VStack align="start" gap={4} flex={1}>
+                    <VStack align="start" gap={3} flex={1}>
                       <Heading
-                        fontSize="2xl"
+                        fontSize="xl"
                         fontWeight="bold"
-                       
+                        color="gray.900"
+                        _dark={{ color: "white" }}
                       >
                         Crédito Construção
                       </Heading>
 
-                      <Text color="fg.muted" fontSize="md" lineHeight="1.6">
-                        Viabilize obras, loteamentos e projetos de expansão com{" "}
-                        <Text as="strong" color="orange.600">
-                          crédito estruturado
-                        </Text>{" "}
-                        e apoio técnico especializado.
-                      </Text>
-
-                      <Badge
-                        colorPalette="orange"
-                        variant="subtle"
+                      <Text
                         fontSize="sm"
-                        px={4}
-                        py={2}
-                        borderRadius="full"
-                        fontWeight="bold"
+                        color="fg.muted"
+                        _dark={{ color: "gray.300" }}
+                        lineHeight="1.5"
                       >
-                        🏗️ Financiamento especializado
-                      </Badge>
+                        Viabilize obras, loteamentos e projetos de expansão com
+                        crédito estruturado e apoio técnico especializado.
+                      </Text>
                     </VStack>
                   </VStack>
                 </Card.Body>
               </Card.Root>
             </GridItem>
 
-            {/* Enhanced Economia com Energia */}
-            <GridItem colSpan={{ base: 1, md: 4 }} rowSpan={{ base: 1, md: 2 }}>
+            {/* Economia com Energia */}
+            <GridItem colSpan={{ base: 1, md: 4 }}>
               <Card.Root
                 size="lg"
-                bg="bg.panel"
+                bg="white"
                 height="full"
                 border="1px solid"
-                borderColor="yellow.100"
-                _hover={{
-                  transform: "translateY(-4px)",
-                  boxShadow: "0 20px 25px -5px rgba(250, 204, 21, 0.15)",
-                  borderColor: "yellow.200",
-                  bg: "yellow.25",
+                borderColor="gray.200"
+                _dark={{
+                  bg: "gray.800",
+                  borderColor: "gray.700",
                 }}
-                transition="all 0.4s ease"
-                boxShadow="0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+                _hover={{
+                  borderColor: "gray.300",
+                  boxShadow: "md",
+                }}
+                transition="all 0.3s ease"
               >
-                <Card.Body p={8}>
-                  <VStack align="start" gap={6} height="full">
+                <Card.Body p={6}>
+                  <VStack align="start" gap={4} height="full">
                     <Box
-                      p={4}
-                      bg="yellow.100"
-                      borderRadius="xl"
-                      _hover={{
-                        bg: "yellow.200",
-                        transform: "scale(1.1)",
-                      }}
-                      transition="all 0.3s ease"
+                      p={3}
+                      bg="yellow.50"
+                      _dark={{ bg: "yellow.900" }}
+                      borderRadius="lg"
                     >
-                      <Zap size={28} color="var(--acp-colors-yellow-600)" />
+                      <Zap size={24} color="var(--acp-colors-yellow-600)" />
                     </Box>
 
-                    <VStack align="start" gap={4} flex={1}>
+                    <VStack align="start" gap={3} flex={1}>
                       <Heading
-                        fontSize="2xl"
+                        fontSize="xl"
                         fontWeight="bold"
-                       
+                        color="gray.900"
+                        _dark={{ color: "white" }}
                       >
                         Economia Energia
                       </Heading>
 
-                      <Text color="fg.muted" fontSize="md" lineHeight="1.6">
-                        Implante soluções energéticas sustentáveis e{" "}
-                        <Text as="strong" color="yellow.600">
-                          reduza até 35% na conta de luz
-                        </Text>{" "}
-                        da sua empresa.
-                      </Text>
-
-                      <Badge
-                        colorPalette="yellow"
-                        variant="subtle"
+                      <Text
                         fontSize="sm"
-                        px={4}
-                        py={2}
-                        borderRadius="full"
-                        fontWeight="bold"
+                        color="fg.muted"
+                        _dark={{ color: "gray.300" }}
+                        lineHeight="1.5"
                       >
-                        ⚡ Sustentabilidade rentável
-                      </Badge>
+                        Implante soluções energéticas sustentáveis e reduza até
+                        35% na conta de luz da sua empresa.
+                      </Text>
                     </VStack>
                   </VStack>
                 </Card.Body>
               </Card.Root>
             </GridItem>
 
-            {/* Enhanced Mini-Banco */}
-            <GridItem colSpan={{ base: 1, md: 3 }} rowSpan={{ base: 1, md: 1 }}>
+            {/* Mini-Banco */}
+            <GridItem colSpan={{ base: 1, md: 3 }}>
               <Card.Root
                 size="lg"
-                bg="bg.panel"
+                bg="white"
                 height="full"
                 border="1px solid"
-                borderColor="green.100"
+                borderColor="gray.200"
+                _dark={{
+                  bg: "gray.800",
+                  borderColor: "gray.700",
+                }}
                 _hover={{
-                  transform: "translateY(-3px)",
-                  boxShadow: "0 10px 20px -5px rgba(59, 130, 246, 0.2)",
-                  borderColor: "green.200",
-                  bg: "green.25",
+                  borderColor: "gray.300",
+                  boxShadow: "md",
                 }}
                 transition="all 0.3s ease"
-                boxShadow="0 2px 4px -1px rgba(0, 0, 0, 0.1)"
               >
-                <Card.Body p={6}>
-                  <HStack gap={4}>
+                <Card.Body p={5}>
+                  <HStack gap={3}>
                     <Box
-                      p={3}
-                      bg="green.100"
-                      borderRadius="lg"
-                      _hover={{
-                        bg: "green.200",
-                        transform: "scale(1.1)",
-                      }}
-                      transition="all 0.3s ease"
+                      p={2}
+                      bg="green.50"
+                      _dark={{ bg: "green.900" }}
+                      borderRadius="md"
                     >
                       <CreditCard
-                        size={22}
+                        size={20}
                         color="var(--acp-colors-green-600)"
                       />
                     </Box>
-                    <VStack align="start" gap={1} flex={1}>
-                      <Heading fontSize="lg" fontWeight="bold">
+                    <VStack align="start" gap={0} flex={1}>
+                      <Heading
+                        fontSize="md"
+                        fontWeight="semibold"
+                        color="gray.900"
+                        _dark={{ color: "white" }}
+                      >
                         Mini-Banco
                       </Heading>
-                      <Text color="fg.muted" fontSize="sm" lineHeight="1.4">
+                      <Text fontSize="xs" color="fg.muted">
                         Ofereça crédito aos seus clientes
                       </Text>
                     </VStack>
@@ -763,42 +415,44 @@ export const SolutionsSection = () => {
               </Card.Root>
             </GridItem>
 
-            {/* Enhanced Expansão Internacional */}
-            <GridItem colSpan={{ base: 1, md: 3 }} rowSpan={{ base: 1, md: 1 }}>
+            {/* Expansão Internacional */}
+            <GridItem colSpan={{ base: 1, md: 3 }}>
               <Card.Root
                 size="lg"
-                bg="bg.panel"
+                bg="white"
                 height="full"
                 border="1px solid"
-                borderColor="green.100"
+                borderColor="gray.200"
+                _dark={{
+                  bg: "gray.800",
+                  borderColor: "gray.700",
+                }}
                 _hover={{
-                  transform: "translateY(-3px)",
-                  boxShadow: "0 10px 20px -5px rgba(20, 184, 166, 0.2)",
-                  borderColor: "green.200",
-                  bg: "green.25",
+                  borderColor: "gray.300",
+                  boxShadow: "md",
                 }}
                 transition="all 0.3s ease"
-                boxShadow="0 2px 4px -1px rgba(0, 0, 0, 0.1)"
               >
-                <Card.Body p={6}>
-                  <HStack gap={4}>
+                <Card.Body p={5}>
+                  <HStack gap={3}>
                     <Box
-                      p={3}
-                      bg="green.100"
-                      borderRadius="lg"
-                      _hover={{
-                        bg: "green.200",
-                        transform: "scale(1.1)",
-                      }}
-                      transition="all 0.3s ease"
+                      p={2}
+                      bg="green.50"
+                      _dark={{ bg: "green.900" }}
+                      borderRadius="md"
                     >
-                      <Globe size={22} color="var(--acp-colors-green-600)" />
+                      <Globe size={20} color="var(--acp-colors-green-600)" />
                     </Box>
-                    <VStack align="start" gap={1} flex={1}>
-                      <Heading fontSize="lg" fontWeight="bold">
+                    <VStack align="start" gap={0} flex={1}>
+                      <Heading
+                        fontSize="md"
+                        fontWeight="semibold"
+                        color="gray.900"
+                        _dark={{ color: "white" }}
+                      >
                         Expansão Global
                       </Heading>
-                      <Text color="fg.muted" fontSize="sm" lineHeight="1.4">
+                      <Text fontSize="xs" color="fg.muted">
                         Atuação internacional segura
                       </Text>
                     </VStack>
@@ -807,42 +461,44 @@ export const SolutionsSection = () => {
               </Card.Root>
             </GridItem>
 
-            {/* Enhanced Seguros Empresariais */}
-            <GridItem colSpan={{ base: 1, md: 3 }} rowSpan={{ base: 1, md: 1 }}>
+            {/* Seguros Empresariais */}
+            <GridItem colSpan={{ base: 1, md: 3 }}>
               <Card.Root
                 size="lg"
-                bg="bg.panel"
+                bg="white"
                 height="full"
                 border="1px solid"
-                borderColor="red.100"
+                borderColor="gray.200"
+                _dark={{
+                  bg: "gray.800",
+                  borderColor: "gray.700",
+                }}
                 _hover={{
-                  transform: "translateY(-3px)",
-                  boxShadow: "0 10px 20px -5px rgba(239, 68, 68, 0.2)",
-                  borderColor: "red.200",
-                  bg: "red.25",
+                  borderColor: "gray.300",
+                  boxShadow: "md",
                 }}
                 transition="all 0.3s ease"
-                boxShadow="0 2px 4px -1px rgba(0, 0, 0, 0.1)"
               >
-                <Card.Body p={6}>
-                  <HStack gap={4}>
+                <Card.Body p={5}>
+                  <HStack gap={3}>
                     <Box
-                      p={3}
-                      bg="red.100"
-                      borderRadius="lg"
-                      _hover={{
-                        bg: "red.200",
-                        transform: "scale(1.1)",
-                      }}
-                      transition="all 0.3s ease"
+                      p={2}
+                      bg="red.50"
+                      _dark={{ bg: "red.900" }}
+                      borderRadius="md"
                     >
-                      <Shield size={22} color="var(--acp-colors-red-600)" />
+                      <Shield size={20} color="var(--acp-colors-red-600)" />
                     </Box>
-                    <VStack align="start" gap={1} flex={1}>
-                      <Heading fontSize="lg" fontWeight="bold">
+                    <VStack align="start" gap={0} flex={1}>
+                      <Heading
+                        fontSize="md"
+                        fontWeight="semibold"
+                        color="gray.900"
+                        _dark={{ color: "white" }}
+                      >
                         Seguros
                       </Heading>
-                      <Text color="fg.muted" fontSize="sm" lineHeight="1.4">
+                      <Text fontSize="xs" color="fg.muted">
                         Proteção empresarial completa
                       </Text>
                     </VStack>
@@ -851,43 +507,49 @@ export const SolutionsSection = () => {
               </Card.Root>
             </GridItem>
 
-            {/* Enhanced Mais Soluções */}
-            <GridItem colSpan={{ base: 1, md: 3 }} rowSpan={{ base: 1, md: 1 }}>
+            {/* Mais Soluções */}
+            <GridItem colSpan={{ base: 1, md: 3 }}>
               <Card.Root
                 size="lg"
-                bg="gray.50"
+                bg="gray.100"
                 height="full"
                 border="1px solid"
                 borderColor="gray.200"
+                _dark={{
+                  bg: "gray.700",
+                  borderColor: "gray.600",
+                }}
                 _hover={{
-                  transform: "translateY(-3px)",
-                  boxShadow: "0 10px 20px -5px rgba(107, 114, 128, 0.2)",
-                  bg: "gray.100",
+                  bg: "gray.200",
                   borderColor: "gray.300",
+                  _dark: {
+                    bg: "gray.600",
+                    borderColor: "gray.500",
+                  },
                 }}
                 transition="all 0.3s ease"
                 cursor="pointer"
-                boxShadow="0 2px 4px -1px rgba(0, 0, 0, 0.1)"
               >
-                <Card.Body p={6}>
-                  <HStack gap={4} justify="center">
+                <Card.Body p={5}>
+                  <HStack gap={3} justify="center">
                     <Box
-                      p={3}
+                      p={2}
                       bg="gray.200"
-                      borderRadius="lg"
-                      _hover={{
-                        bg: "gray.300",
-                        transform: "scale(1.1)",
-                      }}
-                      transition="all 0.3s ease"
+                      _dark={{ bg: "gray.600" }}
+                      borderRadius="md"
                     >
-                      <Target size={22} color="var(--acp-colors-gray-600)" />
+                      <Target size={20} color="var(--acp-colors-gray-50)" />
                     </Box>
-                    <VStack align="start" gap={1}>
-                      <Heading fontSize="lg" fontWeight="bold" color="gray.700">
-                        +Soluções
+                    <VStack align="start" gap={0}>
+                      <Heading
+                        fontSize="md"
+                        fontWeight="semibold"
+                        color="gray.700"
+                        _dark={{ color: "gray.300" }}
+                      >
+                        Mais Soluções
                       </Heading>
-                      <Text color="fg.muted" fontSize="sm" lineHeight="1.4">
+                      <Text fontSize="xs" color="fg.muted">
                         Descubra outras opções
                       </Text>
                     </VStack>

@@ -8,6 +8,7 @@ import {
   HStack,
   Badge,
   Stack,
+  Flex,
 } from "@chakra-ui/react";
 import {
   Users,
@@ -16,6 +17,7 @@ import {
   MapPin,
   Settings,
   CheckCircle,
+  TrendingUp,
 } from "lucide-react";
 
 export const WhyUsSection = () => {
@@ -66,21 +68,27 @@ export const WhyUsSection = () => {
   ];
 
   return (
-    <Box py={{ base: 16, md: 24 }} bg="white" as="section" id="por-que-nos">
-      <Container maxW="8xl">
+    <Box py={{ base: 16, md: 24 }} as="section" id="por-que-nos">
+      <Container maxW="6xl">
         <VStack gap={16}>
           {/* Header */}
           <VStack gap={6} textAlign="center" maxW="4xl">
+           
             <Badge
-              colorPalette="green"
-              fontSize="sm"
-              px={4}
-              py={2}
-              borderRadius="full"
-              fontWeight="medium"
-            >
-              Por que a Financial Hub?
-            </Badge>
+            colorPalette="green"
+            fontSize="sm"
+            px={4}
+            py={3}
+            borderRadius="full"
+            fontWeight="medium"
+            bg="green.600"
+            backdropFilter="blur(10px)"
+          >
+            <Flex align="center" gap={2}>
+              <TrendingUp size={16} />
+              <Text color="white"> Por que a Financial Hub?</Text>
+            </Flex>
+          </Badge>
             
             <Heading
               fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}

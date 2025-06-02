@@ -58,7 +58,7 @@ export const HeroSection = () => {
           muted
           loop
           playsInline
-          src="/video.mp4"
+          src="video.mp4"
         />
         {/* Video Overlay for better text readability */}
         <Box
@@ -93,10 +93,10 @@ export const HeroSection = () => {
             colorPalette="green"
             fontSize="sm"
             px={4}
-            py={2}
+            py={3}
             borderRadius="full"
             fontWeight="medium"
-            bg="rgba(34, 197, 94, 0.9)"
+            bg="green.600"
             backdropFilter="blur(10px)"
           >
             <Flex align="center" gap={2}>
@@ -144,8 +144,10 @@ export const HeroSection = () => {
                 size="lg"
                 variant="outline"
                 backdropFilter="blur(2px)"
+                rounded="full"
                 colorPalette="green"
-                p={2}
+                py={2}
+                px={4}
                 color="white"
               >
                 <Tag.Label>{highlight}</Tag.Label>
