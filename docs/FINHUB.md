@@ -161,8 +161,8 @@ A Finhub Assessoria conecta empresas a soluções financeiras completas, com foc
 **Contato:**
 📍 São Paulo - SP
 📞 (11) 9429-89475
-📧 [contato@financialhub.com.br](mailto:contato@financialhub.com.br)
-🌐 [www.financialhub.com.br](http://www.financialhub.com.br)
+📧 [contato@finhubassessoria.com.br](mailto:contato@finhubassessoria.com.br)
+🌐 [www.finhubassessoria.com.br](http://www.finhubassessoria.com.br)
 Instagram: https://www.instagram.com/finhubassessoria/
 
 **Links úteis:**

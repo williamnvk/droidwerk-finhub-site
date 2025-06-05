@@ -114,11 +114,11 @@ export const ContatoPage = () => {
             <Flex align="center">
               <Icon as={Mail} boxSize={5} color={iconColor} mr={3} />
               <Link
-                href="mailto:contato@financialhub.com.br"
+                href="mailto:contato@finhubassessoria.com.br"
                 color="green.400"
                 _hover={{ textDecoration: "underline" }}
               >
-                contato@financialhub.com.br
+                contato@finhubassessoria.com.br
               </Link>
             </Flex>
             <Flex align="center">

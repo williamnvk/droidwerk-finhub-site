@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Valuation e M&A | Avaliação Empresarial | Finhub",
     description: "📊 Valuation empresarial com metodologias internacionais. Assessoria M&A para fusões, aquisições e sócios estratégicos.",
-    url: "https://financialhub.com.br/servicos/valuation-ma",
+    url: "https://finhubassessoria.com.br/servicos/valuation-ma",
     images: [
       {
-        url: "https://financialhub.com.br/images/valuation-ma-og.png",
+        url: "https://finhubassessoria.com.br/images/valuation-ma-og.png",
         width: 1200,
         height: 630,
         alt: "Valuation Empresarial e M&A - Finhub Assessoria",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   alternates: {
-    canonical: "https://financialhub.com.br/servicos/valuation-ma",
+    canonical: "https://finhubassessoria.com.br/servicos/valuation-ma",
   },
 };
 
@@ -36,7 +36,7 @@ const StructuredDataService = () => {
     provider: {
       "@type": "FinancialService",
       name: "Finhub Assessoria",
-      url: "https://financialhub.com.br"
+      url: "https://finhubassessoria.com.br"
     },
     areaServed: "Brasil",
     serviceType: "Business Valuation and M&A Advisory",

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Captação de Recursos Empresariais | +50 Instituições | Finhub",
     description: "💰 Conectamos sua empresa a +50 bancos e fundos. Crédito de R$ 500 mil a R$ 10 milhões+",
-    url: "https://financialhub.com.br/servicos/captacao-de-recursos",
+    url: "https://finhubassessoria.com.br/servicos/captacao-de-recursos",
     images: [
       {
-        url: "https://financialhub.com.br/images/captacao-recursos-og.png",
+        url: "https://finhubassessoria.com.br/images/captacao-recursos-og.png",
         width: 1200,
         height: 630,
         alt: "Captação de Recursos Empresariais - Finhub Assessoria",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   alternates: {
-    canonical: "https://financialhub.com.br/servicos/captacao-de-recursos",
+    canonical: "https://finhubassessoria.com.br/servicos/captacao-de-recursos",
   },
 };
 
@@ -36,7 +36,7 @@ const StructuredDataService = () => {
     provider: {
       "@type": "FinancialService",
       name: "Finhub Assessoria",
-      url: "https://financialhub.com.br"
+      url: "https://finhubassessoria.com.br"
     },
     areaServed: "Brasil",
     serviceType: "Financial Advisory",

@@ -16,7 +16,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.href ? `https://financialhub.com.br${item.href}` : undefined
+      item: item.href ? `https://finhubassessoria.com.br${item.href}` : undefined
     }));
 
     return {

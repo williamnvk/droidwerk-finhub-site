@@ -339,8 +339,8 @@ export default function TermosDeUso() {
           <List.Root pl={6} gap={2}>
             <List.Item>
               Email:{" "}
-              <Link href="mailto:contato@financialhub.com.br" color="green.500">
-                contato@financialhub.com.br
+              <Link href="mailto:contato@finhubassessoria.com.br" color="green.500">
+                contato@finhubassessoria.com.br
               </Link>
             </List.Item>
             <List.Item>Telefone: (11) 9429-89475</List.Item>
@@ -348,12 +348,12 @@ export default function TermosDeUso() {
             <List.Item>
               Website:{" "}
               <Link
-                href="https://www.financialhub.com.br"
+                href="https://www.finhubassessoria.com.br"
                 color="green.500"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                www.financialhub.com.br
+                www.finhubassessoria.com.br
               </Link>
             </List.Item>
           </List.Root>

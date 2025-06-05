@@ -3,7 +3,7 @@
 ## ✅ **Correções Implementadas**
 
 ### **1. Consistência de URL**
-- ✅ Padronizado todas as URLs para `financialhub.com.br`
+- ✅ Padronizado todas as URLs para `finhubassessoria.com.br`
 - ✅ Corrigido sitemap.xml e robots.txt
 - ✅ Atualizado metadata e Open Graph
 
@@ -61,7 +61,7 @@
 
 2. **Verificar Google Search Console**
    - Adicionar verificação: `<meta name="google-site-verification" content="SEU_CODIGO">`
-   - Submeter sitemap: `https://financialhub.com.br/sitemap.xml`
+   - Submeter sitemap: `https://finhubassessoria.com.br/sitemap.xml`
 
 3. **Implementar FAQ Schema**
    ```javascript

@@ -46,11 +46,11 @@ export const metadata: Metadata = {
     title: "Sobre a Finhub Assessoria | Especialistas em Soluções Financeiras",
     description:
       "Conheça a Finhub Assessoria, especializada em conectar empresas às melhores soluções do mercado. Missão, visão, valores e nossa expertise.",
-    url: "https://financialhub.com.br/sobre",
+    url: "https://finhubassessoria.com.br/sobre",
     siteName: "Finhub Assessoria",
     images: [
       {
-        url: "https://financialhub.com.br/images/about-og.png",
+        url: "https://finhubassessoria.com.br/images/about-og.png",
         width: 1200,
         height: 630,
         alt: "Finhub Assessoria - Sobre nossa empresa",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://financialhub.com.br/sobre",
+    canonical: "https://finhubassessoria.com.br/sobre",
   },
 };
 
@@ -69,7 +69,7 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     name: "Finhub Assessoria",
-    url: "https://financialhub.com.br",
+    url: "https://finhubassessoria.com.br",
     description:
       "Assessoria financeira especializada em conectar empresas às melhores soluções do mercado — de crédito à tecnologia, de valuation à expansão internacional.",
     areaServed: "BR",
@@ -81,7 +81,7 @@ const StructuredData = () => {
       addressCountry: "BR",
     },
     telephone: "+5511942989475",
-    email: "contato@financialhub.com.br",
+    email: "contato@finhubassessoria.com.br",
   };
 
   return (
@@ -483,7 +483,7 @@ export default function SobrePage() {
                     </HStack>
                     <HStack gap={3}>
                       <Mail size={20} color="var(--acp-colors-green-400)" />
-                      <Text>contato@financialhub.com.br</Text>
+                      <Text>contato@finhubassessoria.com.br</Text>
                     </HStack>
                     <HStack gap={3}>
                       <MapPin size={20} color="var(--acp-colors-green-400)" />

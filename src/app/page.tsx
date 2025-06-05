@@ -39,11 +39,11 @@ export const metadata: Metadata = {
     title: "Finhub Assessoria – Soluções Financeiras Inteligentes para Empresas",
     description:
       "🏆 Conectamos sua empresa aos melhores recursos: crédito, valuation, M&A, expansão internacional. +50 parceiros financeiros em São Paulo.",
-    url: "https://financialhub.com.br",
+    url: "https://finhubassessoria.com.br",
     siteName: "Finhub Assessoria",
     images: [
       {
-        url: "https://financialhub.com.br/images/og-image.png",
+        url: "https://finhubassessoria.com.br/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Finhub Assessoria - Soluções Financeiras Inteligentes para Empresas",
@@ -59,10 +59,10 @@ export const metadata: Metadata = {
     title: "Finhub Assessoria – Soluções Financeiras Inteligentes para Empresas",
     description:
       "🏆 Conectamos sua empresa aos melhores recursos: crédito, valuation, M&A, expansão internacional. +50 parceiros financeiros em São Paulo.",
-    images: ["https://financialhub.com.br/images/twitter-image.png"],
+    images: ["https://finhubassessoria.com.br/images/twitter-image.png"],
   },
   alternates: {
-    canonical: "https://financialhub.com.br",
+    canonical: "https://finhubassessoria.com.br",
   },
   verification: {
     google: "seu-google-verification-code-aqui",
@@ -76,14 +76,14 @@ const StructuredData = () => {
     "@graph": [
       {
         "@type": "FinancialService",
-        "@id": "https://financialhub.com.br/#organization",
+        "@id": "https://finhubassessoria.com.br/#organization",
         name: "Finhub Assessoria",
-        alternateName: "Financial Hub Assessoria",
+        alternateName: "Finhub Assessoria",
         description:
           "Assessoria financeira especializada em conectar empresas às melhores soluções do mercado — crédito, valuation, M&A, expansão internacional e tecnologia financeira.",
-        url: "https://financialhub.com.br",
+        url: "https://finhubassessoria.com.br",
         telephone: "+5511942989475",
-        email: "contato@financialhub.com.br",
+        email: "contato@finhubassessoria.com.br",
         foundingDate: "2020",
         address: {
           "@type": "PostalAddress",
@@ -98,8 +98,7 @@ const StructuredData = () => {
           longitude: "-46.6333"
         },
         sameAs: [
-          "https://www.instagram.com/finhubassessoria/",
-          "https://linkedin.com/company/financial-hub-assessoria"
+          "https://www.instagram.com/finhubassessoria/"
         ],
         serviceType: "Financial Advisory Services",
         areaServed: {
@@ -145,19 +144,19 @@ const StructuredData = () => {
       },
       {
         "@type": "WebSite",
-        "@id": "https://financialhub.com.br/#website",
-        url: "https://financialhub.com.br",
+        "@id": "https://finhubassessoria.com.br/#website",
+        url: "https://finhubassessoria.com.br",
         name: "Finhub Assessoria",
         description: "Soluções Financeiras Inteligentes para Empresas",
         publisher: {
-          "@id": "https://financialhub.com.br/#organization"
+          "@id": "https://finhubassessoria.com.br/#organization"
         },
         potentialAction: [
           {
             "@type": "SearchAction",
             target: {
               "@type": "EntryPoint",
-              urlTemplate: "https://financialhub.com.br/search?q={search_term_string}"
+              urlTemplate: "https://finhubassessoria.com.br/search?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -165,18 +164,18 @@ const StructuredData = () => {
       },
       {
         "@type": "WebPage",
-        "@id": "https://financialhub.com.br/#webpage",
-        url: "https://financialhub.com.br",
+        "@id": "https://finhubassessoria.com.br/#webpage",
+        url: "https://finhubassessoria.com.br",
         name: "Finhub Assessoria – Soluções Financeiras Inteligentes para Empresas",
         isPartOf: {
-          "@id": "https://financialhub.com.br/#website"
+          "@id": "https://finhubassessoria.com.br/#website"
         },
         about: {
-          "@id": "https://financialhub.com.br/#organization"
+          "@id": "https://finhubassessoria.com.br/#organization"
         },
         description: "Conectamos sua empresa aos melhores recursos do mercado: crédito, tecnologia, expansão internacional e muito mais.",
         breadcrumb: {
-          "@id": "https://financialhub.com.br/#breadcrumb"
+          "@id": "https://finhubassessoria.com.br/#breadcrumb"
         }
       }
     ]

@@ -62,7 +62,7 @@ export default function PoliticaDePrivacidade() {
               <Text mt={3}>
                 <strong>Dados de contato do controlador:</strong><br />
                 Finhub Assessoria<br />
-                E-mail: contato@financialhub.com.br<br />
+                E-mail: contato@finhubassessoria.com.br<br />
                 Telefone: (11) 94298-9475<br />
                 Endereço: São Paulo - SP
               </Text>
@@ -609,8 +609,8 @@ export default function PoliticaDePrivacidade() {
                   <Text>•</Text>
                   <Text>
                     <strong>E-mail:</strong>{" "}
-                    <Link href="mailto:contato@financialhub.com.br" color="green.500">
-                      contato@financialhub.com.br
+                    <Link href="mailto:contato@finhubassessoria.com.br" color="green.500">
+                      contato@finhubassessoria.com.br
                     </Link>
                   </Text>
                 </HStack>

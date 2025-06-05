@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blog Finhub | Conteúdo sobre Finanças Empresariais",
     description: "📚 Artigos especializados sobre assessoria financeira, captação de recursos e soluções empresariais.",
-    url: "https://financialhub.com.br/blog",
+    url: "https://finhubassessoria.com.br/blog",
     type: "website",
   },
   alternates: {
-    canonical: "https://financialhub.com.br/blog",
+    canonical: "https://finhubassessoria.com.br/blog",
   },
 };
 
@@ -76,17 +76,17 @@ const StructuredDataBlog = () => {
     "@type": "Blog",
     name: "Blog Finhub Assessoria",
     description: "Conteúdo especializado sobre finanças empresariais, captação de recursos, valuation e soluções financeiras",
-    url: "https://financialhub.com.br/blog",
+    url: "https://finhubassessoria.com.br/blog",
     publisher: {
       "@type": "Organization",
       name: "Finhub Assessoria",
-      url: "https://financialhub.com.br"
+      url: "https://finhubassessoria.com.br"
     },
     blogPost: blogPosts.map(post => ({
       "@type": "BlogPosting",
       headline: post.title,
       description: post.excerpt,
-      url: `https://financialhub.com.br/blog/${post.id}`,
+      url: `https://finhubassessoria.com.br/blog/${post.id}`,
       datePublished: post.publishDate,
       author: {
         "@type": "Organization",
